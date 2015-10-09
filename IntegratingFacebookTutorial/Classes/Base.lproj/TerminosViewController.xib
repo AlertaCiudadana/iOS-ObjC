@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Exo-Bold.ttf">
+            <string>Exo-Bold</string>
+            <string>Exo-Bold</string>
+            <string>Exo-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TerminosViewController">
+            <connections>
+                <outlet property="btnClose" destination="c5P-CJ-Mlq" id="4vW-Td-53G"/>
+                <outlet property="titleLabel" destination="vn8-fL-WE8" id="Rz6-Ll-YJZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5P-CJ-Mlq">
+                    <rect key="frame" x="255" y="405" width="91" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="91" id="NsQ-ps-MQQ"/>
+                        <constraint firstAttribute="width" constant="91" id="b1F-XY-i92"/>
+                        <constraint firstAttribute="height" constant="30" id="sxA-4I-y2H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Exo-Bold" family="Exo" pointSize="15"/>
+                    <state key="normal" title="Close">
+                        <color key="titleColor" red="1" green="0.90941816190000002" blue="0.26505560420000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="b1F-XY-i92"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="onClickBtnClose:" destination="-1" eventType="touchUpInside" id="pu9-Bf-GV4"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZO-DB-zTV">
+                    <rect key="frame" x="8" y="45" width="584" height="345"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="345" id="kW0-93-l6M"/>
+                    </constraints>
+                    <string key="text">Terms and conditions for the use of "Danger Away!" application
+Every person (User) that have access to "Danger Away!" mobile application by simply accepting the download and / or register within the app via Facebook, recognize and willingly subject to the following terms and conditions:
+CONDITIONS OF USE OF THE APPLICATION
+The information provided for users is for informational and reference purposes supporting the reports made. Any query that requires an official response must be carried out in the official sites for this purpose.
+Through the "Danger Away!" application, Users can share images or information and display content posted by other users; "Danger Away!" And its founders are not responsible for such content or for any claims or complaints arising from the quality, reliability or accuracy thereof are made.
+The "Danger Away!" Application may contain links to third party web sites ("Linked Sites") or images thereof. The Linked Sites are not under the control of "Danger Away!" And therefore will not be under no circumstances responsible for the content, accuracy or completeness of the information or the generation or transmission of virus by downloading files or images.
+You agree to use the application as well as social networking platforms only to post, send and receive messages and material that are proper and, where appropriate, be related to that particular service, recognizing the User "Danger Away!" Will you entitled to remove any comment, information, content or date Internet is displayed or disseminated and terminate accounts of users in its sole discretion and at any time, provided that unlawful conduct is discussed, fake content is disseminated or contrary to its owners, or is prejudicial to respect for others, morality and decency; User expressly waived any rights that might correspond by these cancellations
+TRADEMARKS AND COPYRIGHT
+Brands Danger Away!, copyright and industrial property and domain names, designs and software for DANGER AWAY!, with their logos, literal elements, audio, multimedia and characteristics, and / or other products and services are trademarks of DANGER AWAY! and their founders, or are used under license rights from holder partners.
+You acknowledge and agree that reproduction is prohibited in any media technology provides content for any image, video, photography owned by DANGER AWAY! or are used under license from the owner, the use and storage of images, designs, text, multimedia material being only allowed, among others, provided that such use is expressly permitted by DANGER AWAY!; that such use is made according to the purposes DANGER AWAY! was created for or intended such service or material that uses them exclusively in personal benefit of the User without involving any financial benefit or to the User or any third party.
+Notwithstanding the foregoing, the User acknowledges that the "Danger Away!" Application displays content, images and information are freely distributed and which are provided by its users from public places and / or database application where the owners have placed it for free dissemination. DANGER AWAY !, no responsibility for accuracy of content and / or information displayed and the availability of any material that is linked from any other Internet site.
+All rights not expressly granted to the User or third parties in this legal notice terms and conditions of use are reserved exclusively for DANGER AWAY!, authorized partners or licensees.
+</string>
+                    <fontDescription key="fontDescription" name="Exo-Bold" family="Exo" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vn8-fL-WE8">
+                    <rect key="frame" x="160" y="0.0" width="280" height="35"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="5gh-iF-ocD"/>
+                        <constraint firstAttribute="height" constant="35" id="cOs-dh-lI2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Exo-Bold" family="Exo" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.90941816190000002" blue="0.26505560420000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="IZO-DB-zTV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="45" id="6V5-jy-zFk"/>
+                <constraint firstItem="c5P-CJ-Mlq" firstAttribute="top" secondItem="IZO-DB-zTV" secondAttribute="bottom" constant="15" id="7zD-pQ-oUH"/>
+                <constraint firstAttribute="centerX" secondItem="c5P-CJ-Mlq" secondAttribute="centerX" id="ORX-Q8-kYQ"/>
+                <constraint firstAttribute="centerX" secondItem="vn8-fL-WE8" secondAttribute="centerX" id="SGE-TG-iLd"/>
+                <constraint firstItem="IZO-DB-zTV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="ZRc-y4-sS7"/>
+                <constraint firstItem="vn8-fL-WE8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hni-vZ-Se8"/>
+                <constraint firstAttribute="trailing" secondItem="IZO-DB-zTV" secondAttribute="trailing" constant="8" id="whE-Jz-gwa"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

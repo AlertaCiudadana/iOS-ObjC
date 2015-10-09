@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "2mQ-W3-S2S"; */
+"2mQ-W3-S2S.text" = "Date";
+
+/* Class = "UILabel"; text = "Calle...."; ObjectID = "3Ka-cs-34p"; */
+"3Ka-cs-34p.text" = "Calle....";
+
+/* Class = "UILabel"; text = "Location:"; ObjectID = "9bb-bR-phu"; */
+"9bb-bR-phu.text" = "Ubicacion:";
+
+/* Class = "UILabel"; text = "Hora:"; ObjectID = "BrK-cO-KBQ"; */
+"BrK-cO-KBQ.text" = "Hora:";
+
+/* Class = "UILabel"; text = "Historia:"; ObjectID = "XVI-QS-DN7"; */
+"XVI-QS-DN7.text" = "Historia:";
+
+/* Class = "UIButton"; normalTitle = "Editar"; ObjectID = "cBa-ee-t3e"; */
+"cBa-ee-t3e.normalTitle" = "Editar";
+
+/* Class = "UILabel"; text = "20:45"; ObjectID = "hU1-uE-E74"; */
+"hU1-uE-E74.text" = "20:45";
+
+/* Class = "UILabel"; text = "Robo"; ObjectID = "iOw-jy-xBw"; */
+"iOw-jy-xBw.text" = "Robo";
+
+/* Class = "UILabel"; text = "Tipo de robo:"; ObjectID = "qrI-Z5-G9T"; */
+"qrI-Z5-G9T.text" = "Tipo de robo:";

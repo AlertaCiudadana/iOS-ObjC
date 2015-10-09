@@ -1,0 +1,4 @@
+/* Localized versions of Info.plist keys */
+
+// Permisos
+"NSLocationAlwaysUsageDescription" = "Usamos tu ubicación para notificarte zonas peligrosas. El uso continuo del GPS puede aumentar el consumo de batería";

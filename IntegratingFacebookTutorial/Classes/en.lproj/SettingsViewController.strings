@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "76d-Y1-RdP"; */
+"76d-Y1-RdP.normalTitle" = "Log out";
+
+/* Class = "UILabel"; text = "Name:"; ObjectID = "QgZ-9c-C8y"; */
+"QgZ-9c-C8y.text" = "Name:";
+
+/* Class = "UIButton"; normalTitle = "Terms and conditions"; ObjectID = "U1m-6w-sfU"; */
+"U1m-6w-sfU.normalTitle" = "Terms and conditions";
+
+/* Class = "UIButton"; normalTitle = "Contact"; ObjectID = "X6i-Fa-Jbz"; */
+"X6i-Fa-Jbz.normalTitle" = "Contact";
+
+/* Class = "UILabel"; text = "Share DANGER AWAY!"; ObjectID = "Yse-Tf-eKk"; */
+"Yse-Tf-eKk.text" = "Share DANGER AWAY!";
+
+/* Class = "UILabel"; text = "Follow us:"; ObjectID = "hEP-mh-b72"; */
+"hEP-mh-b72.text" = "Follow us:";

@@ -1,0 +1,61 @@
+/* 
+  Localizable.strings
+  DangerAwayApp
+
+  Created by Dasoga on 07/04/15.
+
+*/
+
+//Mapview controller
+"Report" = "Reporte";
+"Date: %@\nAddress: %@\nDescription: %@" = "Fecha: %@\nDireccion: %@\nDescripción: %@";
+"Not available"="No disponible";
+"Your user has more than 5 reports today, please try report tomorrow" = "Tienes más de 5 reportes hoy, intenta mañana";
+"Invalid location"="Ubicación invalida";
+"Please zoom in for better acurasy"="Por favor acerca el mapa, para mayor presición";
+"dayIcon_1"="dayIcon_esp_1";
+"dayIcon_7"="dayIcon_esp_7";
+"dayIcon_30"="dayIcon_esp_30";
+
+//ReportForm
+"Yes" = "Si";
+"No" = "No";
+"Do you want to create a report in the following address: %@?" = "Quieres crear tu reporte en: %@?";
+
+//Login
+"The user cancelled the Facebook login." = "El usuario cancelo el login de Facebook";
+"Log In Error" = "Error de autenticación";
+"Please go to Settings -> Privacy -> Facebook and enable Danger Away!" = "Por favor habilita Danger Away! en Configuración -> Privacidad -> Facebook";
+
+//BlogTableTableViewController
+"No data is currently available. Please pull down to refresh."= "No se encontraron datos actualmente. Por favor arrastra hacia abajo la lista para recargarla.";
+"Details..."= "Detalle...";
+"Last update: %@"= "Ultima actualización";
+"Thanks for your support"= "Gracias por tu apoyo";
+
+//ReportMapController
+"Alert"="Alerta";
+"Do you want to create a report in that location?"="Desea crear un reporte en esta ubicación?";
+"Address"="Dirección";
+
+//ReportFormViewController
+"Report creation failed"="Error al crear el reporte";
+
+"map_botonreport"="map_botonreport_esp";
+"Your description must be at least of 70 characters" = "La descripción debe de tener al menos 70 caracteres";
+
+
+//MyReportsTableViewController
+"Back"="Atrás";
+"My Reports"="Mis Reportes";
+
+
+//BlogTableViewController
+"Blog"="Blog";
+
+//Instructions view
+"Done" = "Listo";
+"en01" = "es01";
+"en02" = "es02";
+"en03" = "es03";
+"en04" = "es04";
