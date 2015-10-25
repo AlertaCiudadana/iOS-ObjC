@@ -106,7 +106,6 @@
 		DEBCDB531BDD37A70048BCAC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBCDB521BDD37A70048BCAC /* Parse.framework */; };
 		DEBCDB551BDD37B00048BCAC /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBCDB541BDD37B00048BCAC /* ParseCrashReporting.framework */; };
 		DEBCDB5B1BDD37DE0048BCAC /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBCDB5A1BDD37DE0048BCAC /* ParseFacebookUtilsV4.framework */; };
-		DEBCDB631BDD38680048BCAC /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBCDB621BDD38680048BCAC /* FBAudienceNetwork.framework */; };
 		DEBCDB681BDD389A0048BCAC /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBCDB641BDD389A0048BCAC /* FBSDKCoreKit.framework */; };
 		DEBCDB691BDD389A0048BCAC /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBCDB651BDD389A0048BCAC /* FBSDKLoginKit.framework */; };
 		DEBCDB6A1BDD389A0048BCAC /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBCDB661BDD389A0048BCAC /* FBSDKMessengerShareKit.framework */; };
@@ -120,6 +119,7 @@
 		DEBCDB7D1BDD43BC0048BCAC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBCDB7C1BDD43BC0048BCAC /* Parse.framework */; };
 		DEBCDB811BDD43E10048BCAC /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBCDB801BDD43E10048BCAC /* ParseTwitterUtils.framework */; };
 		DED01F8E1AD3814F006BA82B /* MarkerInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = DED01F8D1AD3814F006BA82B /* MarkerInfoView.m */; };
+		DED6AC311BDD611800A4D4D2 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED6AC301BDD611800A4D4D2 /* FBAudienceNetwork.framework */; };
 		DEEBB8AD1AAB7EFE00769964 /* ReportMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEBB8AC1AAB7EFE00769964 /* ReportMapController.m */; };
 		DEEBB8B21AAB8BD100769964 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEBB8B11AAB8BD100769964 /* Utilities.m */; };
 		DEF2CA1C1ACF455B00BC6721 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF2CA1B1ACF455B00BC6721 /* Social.framework */; };
@@ -271,7 +271,6 @@
 		DEBCDB521BDD37A70048BCAC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		DEBCDB541BDD37B00048BCAC /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
 		DEBCDB5A1BDD37DE0048BCAC /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
-		DEBCDB621BDD38680048BCAC /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
 		DEBCDB641BDD389A0048BCAC /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		DEBCDB651BDD389A0048BCAC /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		DEBCDB661BDD389A0048BCAC /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
@@ -286,6 +285,7 @@
 		DEBCDB801BDD43E10048BCAC /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseTwitterUtils.framework; sourceTree = "<group>"; };
 		DED01F8C1AD3814F006BA82B /* MarkerInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerInfoView.h; sourceTree = "<group>"; };
 		DED01F8D1AD3814F006BA82B /* MarkerInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerInfoView.m; sourceTree = "<group>"; };
+		DED6AC301BDD611800A4D4D2 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
 		DEEBB8AB1AAB7EFE00769964 /* ReportMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportMapController.h; sourceTree = "<group>"; };
 		DEEBB8AC1AAB7EFE00769964 /* ReportMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportMapController.m; sourceTree = "<group>"; };
 		DEEBB8B01AAB8BD100769964 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
@@ -306,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEBCDB741BDD3E3F0048BCAC /* libsqlite3.0.tbd in Frameworks */,
+				DED6AC311BDD611800A4D4D2 /* FBAudienceNetwork.framework in Frameworks */,
 				DEBCDB751BDD3E3F0048BCAC /* libsqlite3.tbd in Frameworks */,
 				DEBCDB711BDD3D1C0048BCAC /* libz.1.1.3.tbd in Frameworks */,
 				D4DA7A1414D334F30055F672 /* SystemConfiguration.framework in Frameworks */,
@@ -340,7 +341,6 @@
 				DEF2CA241ACF4C9400BC6721 /* GooglePlus.framework in Frameworks */,
 				DEBCDB6B1BDD389A0048BCAC /* FBSDKShareKit.framework in Frameworks */,
 				DEBCDB6A1BDD389A0048BCAC /* FBSDKMessengerShareKit.framework in Frameworks */,
-				DEBCDB631BDD38680048BCAC /* FBAudienceNetwork.framework in Frameworks */,
 				DE7CEE161A9F7E3100967C8B /* libicucore.dylib in Frameworks */,
 				C4250170161BBAEE00474BCD /* libz.dylib in Frameworks */,
 				DE7CEE141A9F7E0600967C8B /* OpenGLES.framework in Frameworks */,
@@ -759,13 +759,13 @@
 		DEBCDB611BDD38140048BCAC /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
+				DED6AC301BDD611800A4D4D2 /* FBAudienceNetwork.framework */,
 				DEBCDB6E1BDD3A900048BCAC /* FacebookSDK.framework */,
 				DEBCDB6C1BDD39070048BCAC /* FacebookSDKStrings.bundle */,
 				DEBCDB641BDD389A0048BCAC /* FBSDKCoreKit.framework */,
 				DEBCDB651BDD389A0048BCAC /* FBSDKLoginKit.framework */,
 				DEBCDB661BDD389A0048BCAC /* FBSDKMessengerShareKit.framework */,
 				DEBCDB671BDD389A0048BCAC /* FBSDKShareKit.framework */,
-				DEBCDB621BDD38680048BCAC /* FBAudienceNetwork.framework */,
 			);
 			name = Facebook;
 			sourceTree = "<group>";
