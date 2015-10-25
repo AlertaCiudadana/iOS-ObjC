@@ -12,7 +12,8 @@
 #import "ReportMapController.h"
 #import "MyReportsTableViewController.h"
 #import <Parse/Parse.h>
-#import <ParseFacebookUtils/PFFacebookUtils.h>
+#import <ParseFacebookUtilsV4/ParseFacebookUtilsV4.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import "DWBubbleMenuButton.h"
 #import "MarkerInfoView.h"
 #import <GoogleMobileAds/GADInterstitial.h>

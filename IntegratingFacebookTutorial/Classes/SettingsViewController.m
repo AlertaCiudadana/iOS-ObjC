@@ -8,8 +8,8 @@
 
 #import "SettingsViewController.h"
 #import <Parse/Parse.h>
-#import <ParseFacebookUtils/PFFacebookUtils.h>
-
+#import <ParseFacebookUtilsV4/ParseFacebookUtilsV4.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 @interface SettingsViewController ()
 
 @end
@@ -32,7 +32,7 @@
 }
 
 -(void)appInviteDialog:(FBSDKAppInviteDialog *)appInviteDialog didFailWithError:(NSError *)error{
-    NSLog(error.localizedDescription);
+    NSLog(@"%@",error.localizedDescription);
 }
 -(void)appInviteDialog:(FBSDKAppInviteDialog *)appInviteDialog didCompleteWithResults:(NSDictionary *)results{
     NSLog(@"Facebook Invite Complete");
@@ -160,8 +160,9 @@
 }
 
 
-
+/*
 -(void)checkFacebookPublishPermissionWithblock:(void (^)(BOOL canShare, NSError *error))completionBlock{
+    
     FBSession *session = [PFFacebookUtils session];
     [session refreshPermissionsWithCompletionHandler:^(FBSession *session, NSError *error) {
         if ([session hasGranted:@"publish_actions"]) {
@@ -178,7 +179,7 @@
     }];
 }
 
-
+*/
 - (void)logoutButtonAction:(id)sender {
     // Logout user, this automatically clears the cache
     [PFUser logOut];
@@ -211,14 +212,15 @@
 }
 
 - (IBAction)onClickShareFacebook:(id)sender {
-    FBSDKAppInviteContent *content =[[FBSDKAppInviteContent alloc] initWithAppLinkURL:[NSURL URLWithString:@"http://fb.me/632680106831666"]];
+    FBSDKAppInviteContent *content = [[FBSDKAppInviteContent alloc] init];
+    [content setAppLinkURL:[NSURL URLWithString:@"http://fb.me/632680106831666"]];
+    
     //optionally set previewImageURL
-    content.previewImageURL = [NSURL URLWithString:@"http://zahuisoftware.com/dangeraway/"];
+
+    [content setAppInvitePreviewImageURL:[NSURL URLWithString:@"http://zahuisoftware.com/dangeraway/"]];
     
     // present the dialog. Assumes self implements protocol `FBSDKAppInviteDialogDelegate`
-    [FBSDKAppInviteDialog showWithContent:content
-                                 delegate:self];
-    
+    [FBSDKAppInviteDialog showFromViewController:self withContent:content delegate:self];   
 
     
     /**SLComposeViewController *fbController=[SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
@@ -272,7 +274,7 @@
                                       ];
                 [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
                     if (!error) {
-                        /*
+    
                         NSDictionary *userData = (NSDictionary *)result; // The result is a dictionary
                         
                         NSString *facebookId = userData[@"id"];
@@ -315,7 +317,7 @@
     */
 }
 
-
+/*
 -(void)requestPermission{
     NSString * EMAIL = @"email";
     //NSString * BIRTHDAY = @"user_birthday";
@@ -341,7 +343,7 @@
         
     }];
 }
-
+*/
 - (IBAction)onClickShareTwitter:(id)sender {
     
     BOOL isAvailable = [SLComposeViewController isAvailableForServiceType: SLServiceTypeTwitter];

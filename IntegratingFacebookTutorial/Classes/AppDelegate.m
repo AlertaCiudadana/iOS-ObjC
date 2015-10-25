@@ -43,7 +43,7 @@ static NSString * const kClientID = @"AIzaSyCBapC2WQLVz77yBUjjuJ-pOi131hiP1-4";
     // ****************************************************************************
     // Your Facebook application id is configured in Info.plist.
     // ****************************************************************************
-    [PFFacebookUtils initializeFacebook];
+    [PFFacebookUtils initializeFacebookWithApplicationLaunchOptions:launchOptions];
 
     
     
@@ -109,9 +109,10 @@ static NSString * const kClientID = @"AIzaSyCBapC2WQLVz77yBUjjuJ-pOi131hiP1-4";
 // App switching methods to support Facebook Single Sign-On.
 // ****************************************************************************
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    return [FBAppCall handleOpenURL:url
-                  sourceApplication:sourceApplication
-                        withSession:[PFFacebookUtils session]];
+    //return [FBAppCall handleOpenURL:url
+                  //sourceApplication:sourceApplication
+                    //    withSession:[PFFacebookUtils session]];
+    return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
 } 
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
@@ -123,7 +124,8 @@ static NSString * const kClientID = @"AIzaSyCBapC2WQLVz77yBUjjuJ-pOi131hiP1-4";
         currentInstallation.badge = 0;
         [currentInstallation saveEventually];
     }
-    [FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
+    //[FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
+    [FBAppCall handleDidBecomeActive];
 }
 
 
@@ -137,7 +139,7 @@ static NSString * const kClientID = @"AIzaSyCBapC2WQLVz77yBUjjuJ-pOi131hiP1-4";
     NSLog(@"stop updating location");
     [locationManager stopMonitoringSignificantLocationChanges];
     [locationManager stopUpdatingLocation];
-    [[PFFacebookUtils session] close];
+    //[[PFFacebookUtils session] close];
 }
 
 -(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken{

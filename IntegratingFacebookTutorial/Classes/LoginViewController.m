@@ -20,7 +20,8 @@
  */
 
 #import "LoginViewController.h"
-#import <ParseFacebookUtils/PFFacebookUtils.h>
+#import <ParseFacebookUtilsV4/ParseFacebookUtilsV4.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import "UserDetailsViewController.h"
 #import "MapViewController.h"
 #import "InfoViewController.h"
@@ -160,7 +161,8 @@
         NSArray *permissionsArray = @[ EMAIL];
 
         // Login PFUser using Facebook
-        [PFFacebookUtils logInWithPermissions:permissionsArray block:^(PFUser *user, NSError *error) {
+
+        [PFFacebookUtils logInInBackgroundWithReadPermissions:permissionsArray block:^(PFUser *user, NSError *error) {
             [_activityIndicator stopAnimating]; // Hide loading indicator
             
             if (!user) {

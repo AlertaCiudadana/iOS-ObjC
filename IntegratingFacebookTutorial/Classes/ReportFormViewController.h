@@ -10,7 +10,8 @@
 #import "BounceAnimationController.h"
 #import "RoundRectPresentationController.h"
 #import <Parse/Parse.h>
-#import <ParseFacebookUtils/PFFacebookUtils.h>
+#import <ParseFacebookUtilsV4/ParseFacebookUtilsV4.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import "XYAlertView.h"
 
 @interface ReportFormViewController : UIViewController<UITextViewDelegate>{

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Exo-Bold.ttf">
@@ -30,6 +30,7 @@
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90L-HP-5Ka">
                     <rect key="frame" x="160" y="0.0" width="280" height="35"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="Zlw-vJ-R2r"/>
@@ -41,12 +42,14 @@
                 </label>
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="6tX-MX-Zpn">
                     <rect key="frame" x="290" y="283" width="20" height="20"/>
+                    <animations/>
                 </activityIndicatorView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2l-8L-w0f">
                     <rect key="frame" x="175" y="392" width="250" height="46"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdq-Hd-K2c">
                             <rect key="frame" x="8" y="8" width="91" height="30"/>
+                            <animations/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="2ql-Nn-bCw"/>
@@ -63,6 +66,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgh-Wa-z0L">
                             <rect key="frame" x="151" y="8" width="91" height="30"/>
+                            <animations/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="AS5-yd-nSl"/>
@@ -78,6 +82,7 @@
                             </connections>
                         </button>
                     </subviews>
+                    <animations/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Tgh-Wa-z0L" secondAttribute="trailing" constant="8" id="8Or-01-XeT"/>
                         <constraint firstItem="Zdq-Hd-K2c" firstAttribute="leading" secondItem="F2l-8L-w0f" secondAttribute="leading" constant="8" id="8Wf-bu-CBR"/>
@@ -89,6 +94,7 @@
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you agree with this terms and conditions?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tu8-z8-6OW">
                     <rect key="frame" x="175" y="343" width="250" height="41"/>
+                    <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="250" id="8lb-ea-bxw"/>
                         <constraint firstAttribute="height" constant="41" id="Gmg-p9-MQ3"/>
@@ -99,6 +105,7 @@
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xe-zz-XjE">
                     <rect key="frame" x="8" y="45" width="584" height="290"/>
+                    <animations/>
                     <constraints>
                         <constraint firstAttribute="height" constant="290" id="2T4-N4-Hst"/>
                         <constraint firstAttribute="width" constant="584" id="Ifj-tg-0vH"/>
@@ -120,6 +127,7 @@ All rights not expressly granted to the User or third parties in this legal noti
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
             </subviews>
+            <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="7xe-zz-XjE" secondAttribute="trailing" constant="8" id="0pc-OZ-wO6"/>
