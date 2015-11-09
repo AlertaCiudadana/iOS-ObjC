@@ -1119,6 +1119,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -1128,6 +1129,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IntegratingFacebookTutorial/Supporting Files/Alerta Ciudadana-Prefix.pch";
 				INFOPLIST_FILE = "IntegratingFacebookTutorial/Supporting Files/Alerta Ciudadana-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = (
 					"-force_load",
 					"$(PROJECT_DIR)/GoogleMaps.framework/GoogleMaps",
@@ -1146,6 +1148,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -1155,6 +1158,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IntegratingFacebookTutorial/Supporting Files/Alerta Ciudadana-Prefix.pch";
 				INFOPLIST_FILE = "IntegratingFacebookTutorial/Supporting Files/Alerta Ciudadana-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = (
 					"-force_load",
 					"$(PROJECT_DIR)/GoogleMaps.framework/GoogleMaps",

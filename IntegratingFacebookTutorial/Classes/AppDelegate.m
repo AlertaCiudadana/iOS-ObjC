@@ -25,7 +25,7 @@
 
 @implementation AppDelegate
 //static NSString * const kClientID = @"AIzaSyAsaxcNYu-FvXDSNGOGd6wZz_EkoB9J-2U";
-static NSString * const kClientID = @"AIzaSyCBapC2WQLVz77yBUjjuJ-pOi131hiP1-4";
+static NSString * const kClientID = @"AIzaSyCwMoFo_eQeuf6Anea-5nXRItwS9L6GZzU";
 
 #pragma mark -
 #pragma mark UIApplicationDelegate
@@ -38,14 +38,14 @@ static NSString * const kClientID = @"AIzaSyCBapC2WQLVz77yBUjjuJ-pOi131hiP1-4";
     // ****************************************************************************
     // Fill in with your Parse credentials:
     // ****************************************************************************
-    [Parse setApplicationId:@"b2WtxItsNHF5Y8lY7Z6nUWSMCCCqdNQ4oxCoZgsC" clientKey:@"GryC41X11UTjKtwHq5UiGMsbia5e5SjOERnr2zHg"];
+    [Parse setApplicationId:@"Z47CMTmBLbAwGwFT0NQeN9sLx22YMTrn7bDKCXVl" clientKey:@"mjPpw0ieszGk2Xgd9B4qW0Ueqevbz7wRUlTemc97"];
 
     // ****************************************************************************
     // Your Facebook application id is configured in Info.plist.
     // ****************************************************************************
     [PFFacebookUtils initializeFacebookWithApplicationLaunchOptions:launchOptions];
-
-    
+    [[FBSDKApplicationDelegate sharedInstance] application:application
+                             didFinishLaunchingWithOptions:launchOptions];
     
     if ([PFUser currentUser] && [PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) {
         BaseViewController *tabBar = [[BaseViewController alloc] initWithNibName:nil bundle:nil];
@@ -112,7 +112,11 @@ static NSString * const kClientID = @"AIzaSyCBapC2WQLVz77yBUjjuJ-pOi131hiP1-4";
     //return [FBAppCall handleOpenURL:url
                   //sourceApplication:sourceApplication
                     //    withSession:[PFFacebookUtils session]];
-    return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
+    return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                          openURL:url
+                                                sourceApplication:sourceApplication
+                                                       annotation:annotation];
+    //return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
 } 
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
@@ -126,6 +130,7 @@ static NSString * const kClientID = @"AIzaSyCBapC2WQLVz77yBUjjuJ-pOi131hiP1-4";
     }
     //[FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
     [FBAppCall handleDidBecomeActive];
+    [FBSDKAppEvents activateApp];
 }
 
 
