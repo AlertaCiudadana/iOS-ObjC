@@ -25,7 +25,7 @@
 
 @implementation AppDelegate
 //static NSString * const kClientID = @"AIzaSyAsaxcNYu-FvXDSNGOGd6wZz_EkoB9J-2U";
-static NSString * const kClientID = @"AIzaSyCwMoFo_eQeuf6Anea-5nXRItwS9L6GZzU";
+static NSString * const kClientIDGoogle = @"AIzaSyCwMoFo_eQeuf6Anea-5nXRItwS9L6GZzU";
 
 #pragma mark -
 #pragma mark UIApplicationDelegate
@@ -74,7 +74,7 @@ static NSString * const kClientID = @"AIzaSyCwMoFo_eQeuf6Anea-5nXRItwS9L6GZzU";
     [application registerUserNotificationSettings:settings];
     [application registerForRemoteNotifications];
     
-    NSString *keyMaps = kClientID;
+    NSString *keyMaps = kClientIDGoogle;
     [GMSServices provideAPIKey:keyMaps];
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
         UIColor *navBackground = [Utilities colorwithHexString:@"#ffd900" alpha:1];
@@ -97,7 +97,7 @@ static NSString * const kClientID = @"AIzaSyCwMoFo_eQeuf6Anea-5nXRItwS9L6GZzU";
         [[UITabBar appearance] setSelectedImageTintColor:[UIColor blackColor]];
         [[UITabBar appearance] setTranslucent:YES];
     }
-    [GPPSignIn sharedInstance].clientID = kClientID;
+    [GPPSignIn sharedInstance].clientID = kClientIDGoogle;
     
     [self startSignificantChangeUpdates];
     //[self stopSignificantChangeUpdates];
