@@ -147,6 +147,7 @@ static NSString * const kClientIDGoogle = @"AIzaSyCwMoFo_eQeuf6Anea-5nXRItwS9L6G
     //[[PFFacebookUtils session] close];
 }
 
+
 -(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken{
     //Store the deviceToken in the current installation and save it to Parse
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];

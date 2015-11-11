@@ -799,6 +799,7 @@
 				LastUpgradeCheck = 0710;
 				TargetAttributes = {
 					D4DA79E914D3345A0055F672 = {
+						DevelopmentTeam = BVU674NSCH;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -1133,7 +1134,7 @@
 					"-force_load",
 					"$(PROJECT_DIR)/GoogleMaps.framework/GoogleMaps",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alerta.ciudadana;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.alerta.ciudadana;
 				PRODUCT_NAME = "Alerta Ciudadana";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1162,7 +1163,7 @@
 					"-force_load",
 					"$(PROJECT_DIR)/GoogleMaps.framework/GoogleMaps",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alerta.ciudadana;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.alerta.ciudadana;
 				PRODUCT_NAME = "Alerta Ciudadana";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

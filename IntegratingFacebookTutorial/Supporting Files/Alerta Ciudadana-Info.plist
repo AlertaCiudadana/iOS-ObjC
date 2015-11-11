@@ -74,10 +74,10 @@
 			</dict>
 			<key>facebook.com</key>
 			<dict>
-				<key>NSExceptionRequiresForwardSecrecy</key>
-				<false/>
 				<key>NSIncludesSubdomains</key>
 				<true/>
+				<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
+				<false/>
 			</dict>
 			<key>fbcdn.net</key>
 			<dict>
@@ -97,6 +97,8 @@
 		<string>Exo-Light.ttf</string>
 		<string>Exo-Bold.ttf</string>
 	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 	<key>UIStatusBarHidden</key>
 	<false/>
 	<key>UISupportedInterfaceOrientations</key>
@@ -108,7 +110,7 @@
 	<false/>
 	<key>URL Schemes</key>
 	<array>
-		<string>fbauth2</string>
+		<string>fb1483725858622511</string>
 	</array>
 </dict>
 </plist>

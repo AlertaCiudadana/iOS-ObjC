@@ -210,7 +210,22 @@
                     language = @"es";
                 }
                 if (user.isNew) {
+                    NSLog(@"New user");
                     
+                    NSMutableDictionary* parameters = [NSMutableDictionary dictionary];
+                    [parameters setValue:@"id, name, email" forKey:@"fields"];
+                    
+                    [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:parameters]
+                     startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error)
+                    {
+                        NSLog(@"Fetched user is:%@", result);
+                        [[PFUser currentUser] setObject:result[@"email"] forKey:@"email"];
+                        [[PFUser currentUser] setObject:result[@"name"] forKey:@"name"];                        
+                        [[PFUser currentUser] saveInBackground];
+
+                    }];
+
+                    /*
                     [[FBRequest requestForMe] startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error2) {
                         NSDictionary *userData = (NSDictionary *)result;
                         
@@ -220,6 +235,7 @@
                         [[PFUser currentUser] saveInBackground];
                         
                     }];
+                    */
                     
                     PFInstallation *installation = [PFInstallation currentInstallation];
                     installation[@"user"] = [PFUser currentUser];
