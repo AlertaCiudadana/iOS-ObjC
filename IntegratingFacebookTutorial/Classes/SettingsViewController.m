@@ -401,7 +401,7 @@
     if (isAvailable) {
         SLComposeViewController * composeVC = [SLComposeViewController composeViewControllerForServiceType: SLServiceTypeTwitter];
         [composeVC addImage:[UIImage imageNamed:@"logo.jpg"]];
-        [composeVC setInitialText:@"DangerAway!."];
+        [composeVC setInitialText:@"AlertaCiudadana!."];
         [composeVC addURL:[NSURL URLWithString:@"ttp://http://denunciaecatepec.com/alertaciudadana"]];
         [self presentViewController: composeVC animated: YES completion: nil];
     }
@@ -449,10 +449,10 @@
 }
 
 - (IBAction)onClickFollowGoogle:(id)sender {
-    NSString *channelName = @"MegaMarchaEcate";
+    NSString *channelName = @"UCY0I7Q8q5rHDwAgnP_A6Jpg";
     
-    NSURL *linkToAppURL = [NSURL URLWithString:[NSString stringWithFormat:@"youtube://user/%@",channelName]];
-    NSURL *linkToWebURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://www.youtube.com/user/%@",channelName]];
+    NSURL *linkToAppURL = [NSURL URLWithString:[NSString stringWithFormat:@"youtube://channel/%@",channelName]];
+    NSURL *linkToWebURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://www.youtube.com/channel/%@",channelName]];
     
     if ([[UIApplication sharedApplication] canOpenURL:linkToAppURL]) {
         // Can open the youtube app URL so launch the youTube app with this URL

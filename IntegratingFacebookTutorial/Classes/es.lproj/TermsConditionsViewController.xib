@@ -47,7 +47,7 @@
                         <constraint firstAttribute="height" constant="290" id="2T4-N4-Hst"/>
                         <constraint firstAttribute="width" constant="584" id="Ifj-tg-0vH"/>
                     </constraints>
-                    <mutableString key="text">Términos y Condiciones de Uso de la Aplicación “Alerta Ciudadana!”
+                    <string key="text">Términos y Condiciones de Uso de la Aplicación “Alerta Ciudadana!”
 Toda persona (Usuario) que tenga acceso a la aplicación móvil "Alerta Ciudadana!" por el simple hecho de aceptar la descarga y/o registrarse dentro de la aplicación a través de Facebook, reconoce y voluntariamente se sujeta a los siguientes términos y condiciones de uso:
 CONDICIONES DE USO DE LA APLICACIÓN
 La información que por este medio se proporciona tiene carácter meramente informativo y es para efectos de referencia que respalda los reportes realizados. Cualquier consulta que requiera una respuesta oficial, deberá realizarse en las oficinas o sitios oficiales determinados para tal efecto.
@@ -59,7 +59,7 @@ Las marcas Alerta Ciudadana!, derechos de autor y de propiedad industrial, así 
 El Usuario reconoce y acepta que se prohíbe la reproducción en cualquier medio que la tecnología proporcione respecto de cualquier contenido imagen, video, fotografía que son propiedad de Alerta Ciudadana! o que son utilizados bajo licencia de su titular, estando únicamente permitido el uso y almacenamiento de imágenes, diseños, textos, material multimedia, entre otros, siempre que dicha utilización se encuentre expresamente permitida por Alerta Ciudadana!; que dicha utilización se realice siguiendo los propósitos para los que Alerta Ciudadana! ha creado o destinado dicho servicio o material y que dicho uso se realice en beneficio exclusivamente personal del Usuario sin que involucre ningún tipo de beneficio económico ni a favor del Usuario ni de ningún tercero.
 Sin perjuicio de lo anterior el Usuario reconoce que la aplicación "Alerta Ciudadana!" despliega contenidos, imágenes e información que son libremente divulgadas y que son proporcionadas por sus Usuarios desde sitios públicos y/o la base de datos de la aplicación donde sus titulares la han colocado para su libre difusión. Alerta Ciudadana!, no se hace responsable sobre a veracidad de los contenidos y/o de la información desplegada así como de la disponibilidad de cualquier tipo de material que sea enlazado desde cualquier otro portal de Internet.
 Todos los derechos no concedidos expresamente a favor del Usuario o de terceros en el presente Aviso Legal de Términos y Condiciones de Uso, están reservados a favor exclusivamente de Alerta Ciudadana!, sus socios o licenciatarios autorizados.
-</mutableString>
+</string>
                     <fontDescription key="fontDescription" name="Exo-Bold" family="Exo" pointSize="12"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
@@ -123,7 +123,7 @@ Todos los derechos no concedidos expresamente a favor del Usuario o de terceros 
                         <constraint firstAttribute="height" constant="41" id="Gmg-p9-MQ3"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Exo-Bold" family="Exo" pointSize="14"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
