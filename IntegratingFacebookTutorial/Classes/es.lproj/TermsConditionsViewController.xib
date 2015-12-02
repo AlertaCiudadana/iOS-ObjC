@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Exo-Bold.ttf">
@@ -30,6 +30,7 @@
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terminos y Condiciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90L-HP-5Ka">
                     <rect key="frame" x="160" y="0.0" width="280" height="35"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="Zlw-vJ-R2r"/>
@@ -41,34 +42,37 @@
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xe-zz-XjE">
                     <rect key="frame" x="8" y="45" width="584" height="290"/>
+                    <animations/>
                     <constraints>
                         <constraint firstAttribute="height" constant="290" id="2T4-N4-Hst"/>
                         <constraint firstAttribute="width" constant="584" id="Ifj-tg-0vH"/>
                     </constraints>
-                    <string key="text">Términos y Condiciones de Uso de la Aplicación “Danger Away!”
-Toda persona (Usuario) que tenga acceso a la aplicación móvil "Danger Away!" por el simple hecho de aceptar la descarga y/o registrarse dentro de la aplicación a través de Facebook, reconoce y voluntariamente se sujeta a los siguientes términos y condiciones de uso:
+                    <mutableString key="text">Términos y Condiciones de Uso de la Aplicación “Alerta Ciudadana!”
+Toda persona (Usuario) que tenga acceso a la aplicación móvil "Alerta Ciudadana!" por el simple hecho de aceptar la descarga y/o registrarse dentro de la aplicación a través de Facebook, reconoce y voluntariamente se sujeta a los siguientes términos y condiciones de uso:
 CONDICIONES DE USO DE LA APLICACIÓN
 La información que por este medio se proporciona tiene carácter meramente informativo y es para efectos de referencia que respalda los reportes realizados. Cualquier consulta que requiera una respuesta oficial, deberá realizarse en las oficinas o sitios oficiales determinados para tal efecto.
-A través de la aplicación "Danger Away!" el Usuario puede compartir imágenes o información y también visualizar contenidos enviados por otros usuarios; “Danger Away!” ni sus socios fundadores no se hacen responsables de dichos contenidos ni de las reclamaciones o quejas que puedan derivarse de la calidad, fiabilidad o exactitud de los mismos.
-La aplicación “Danger Away!” puede contener ligas a sitios Web de terceros ("Sitios Vinculados") o imágenes de los mismos. Los Sitios Vinculados no están bajo control de “Danger Away!” y por lo tanto no será bajo ningún supuesto responsable del contenido, exactitud o precisión de la información o la generación o transmisión de virus por la descarga de archivos o imágenes.
-Usted acepta usar la aplicación, así como las plataformas de redes sociales sólo para anunciar, enviar y recibir mensajes y materiales que sean apropiados y, en su caso, estén relacionados con dicho servicio en particular, reconociendo el Usuario que “Danger Away!” estará legitimada para remover cualquier tipo de comentario, información, contenido o liga de Internet que sea desplegado o difundido, así como cancelar cuentas de los Usuarios a su sola discreción y en cualquier tiempo, siempre que se comenta una conducta ilícita, se difunda contenidos falsos o en perjuicio de sus titulares, o bien se atente al respeto de terceros, la moral y las buenas costumbres; renunciado expresamente el Usuario a cualquier derecho que le pudiera corresponder por dichas cancelaciones
+A través de la aplicación "Alerta Ciudadana!" el Usuario puede compartir imágenes o información y también visualizar contenidos enviados por otros usuarios; “Alerta Ciudadana!” ni sus socios fundadores no se hacen responsables de dichos contenidos ni de las reclamaciones o quejas que puedan derivarse de la calidad, fiabilidad o exactitud de los mismos.
+La aplicación “Alerta Ciudadana!” puede contener ligas a sitios Web de terceros ("Sitios Vinculados") o imágenes de los mismos. Los Sitios Vinculados no están bajo control de “Alerta Ciudadana!” y por lo tanto no será bajo ningún supuesto responsable del contenido, exactitud o precisión de la información o la generación o transmisión de virus por la descarga de archivos o imágenes.
+Usted acepta usar la aplicación, así como las plataformas de redes sociales sólo para anunciar, enviar y recibir mensajes y materiales que sean apropiados y, en su caso, estén relacionados con dicho servicio en particular, reconociendo el Usuario que “Alerta Ciudadana!” estará legitimada para remover cualquier tipo de comentario, información, contenido o liga de Internet que sea desplegado o difundido, así como cancelar cuentas de los Usuarios a su sola discreción y en cualquier tiempo, siempre que se comenta una conducta ilícita, se difunda contenidos falsos o en perjuicio de sus titulares, o bien se atente al respeto de terceros, la moral y las buenas costumbres; renunciado expresamente el Usuario a cualquier derecho que le pudiera corresponder por dichas cancelaciones
 MARCAS Y COPYRIGHT
-Las marcas Danger Away!, derechos de autor y de propiedad industrial, así como los nombres de dominio, diseños y programas de cómputo de DANGER AWAY!, con sus logos, elementos literales, auditivos, de multimedia y sus características, y/o otros productos y servicios son marcas registradas propiedad de DANGER AWAY! y sus socios fundadores o son derechos utilizados bajo licencia de su titular.
-El Usuario reconoce y acepta que se prohíbe la reproducción en cualquier medio que la tecnología proporcione respecto de cualquier contenido imagen, video, fotografía que son propiedad de DANGER AWAY! o que son utilizados bajo licencia de su titular, estando únicamente permitido el uso y almacenamiento de imágenes, diseños, textos, material multimedia, entre otros, siempre que dicha utilización se encuentre expresamente permitida por DANGER AWAY!; que dicha utilización se realice siguiendo los propósitos para los que DANGER AWAY! ha creado o destinado dicho servicio o material y que dicho uso se realice en beneficio exclusivamente personal del Usuario sin que involucre ningún tipo de beneficio económico ni a favor del Usuario ni de ningún tercero.
-Sin perjuicio de lo anterior el Usuario reconoce que la aplicación "Danger Away!" despliega contenidos, imágenes e información que son libremente divulgadas y que son proporcionadas por sus Usuarios desde sitios públicos y/o la base de datos de la aplicación donde sus titulares la han colocado para su libre difusión. DANGER AWAY!, no se hace responsable sobre a veracidad de los contenidos y/o de la información desplegada así como de la disponibilidad de cualquier tipo de material que sea enlazado desde cualquier otro portal de Internet.
-Todos los derechos no concedidos expresamente a favor del Usuario o de terceros en el presente Aviso Legal de Términos y Condiciones de Uso, están reservados a favor exclusivamente de DANGER AWAY!, sus socios o licenciatarios autorizados.
-</string>
+Las marcas Alerta Ciudadana!, derechos de autor y de propiedad industrial, así como los nombres de dominio, diseños y programas de cómputo de Alerta Ciudadana!, con sus logos, elementos literales, auditivos, de multimedia y sus características, y/o otros productos y servicios son marcas registradas propiedad de Alerta Ciudadana! y sus socios fundadores o son derechos utilizados bajo licencia de su titular.
+El Usuario reconoce y acepta que se prohíbe la reproducción en cualquier medio que la tecnología proporcione respecto de cualquier contenido imagen, video, fotografía que son propiedad de Alerta Ciudadana! o que son utilizados bajo licencia de su titular, estando únicamente permitido el uso y almacenamiento de imágenes, diseños, textos, material multimedia, entre otros, siempre que dicha utilización se encuentre expresamente permitida por Alerta Ciudadana!; que dicha utilización se realice siguiendo los propósitos para los que Alerta Ciudadana! ha creado o destinado dicho servicio o material y que dicho uso se realice en beneficio exclusivamente personal del Usuario sin que involucre ningún tipo de beneficio económico ni a favor del Usuario ni de ningún tercero.
+Sin perjuicio de lo anterior el Usuario reconoce que la aplicación "Alerta Ciudadana!" despliega contenidos, imágenes e información que son libremente divulgadas y que son proporcionadas por sus Usuarios desde sitios públicos y/o la base de datos de la aplicación donde sus titulares la han colocado para su libre difusión. Alerta Ciudadana!, no se hace responsable sobre a veracidad de los contenidos y/o de la información desplegada así como de la disponibilidad de cualquier tipo de material que sea enlazado desde cualquier otro portal de Internet.
+Todos los derechos no concedidos expresamente a favor del Usuario o de terceros en el presente Aviso Legal de Términos y Condiciones de Uso, están reservados a favor exclusivamente de Alerta Ciudadana!, sus socios o licenciatarios autorizados.
+</mutableString>
                     <fontDescription key="fontDescription" name="Exo-Bold" family="Exo" pointSize="12"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="6tX-MX-Zpn">
                     <rect key="frame" x="290" y="283" width="20" height="20"/>
+                    <animations/>
                 </activityIndicatorView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2l-8L-w0f">
                     <rect key="frame" x="175" y="392" width="250" height="46"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdq-Hd-K2c">
                             <rect key="frame" x="8" y="8" width="91" height="30"/>
+                            <animations/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="2ql-Nn-bCw"/>
@@ -85,6 +89,7 @@ Todos los derechos no concedidos expresamente a favor del Usuario o de terceros 
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgh-Wa-z0L">
                             <rect key="frame" x="151" y="8" width="91" height="30"/>
+                            <animations/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="AS5-yd-nSl"/>
@@ -100,6 +105,7 @@ Todos los derechos no concedidos expresamente a favor del Usuario o de terceros 
                             </connections>
                         </button>
                     </subviews>
+                    <animations/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Tgh-Wa-z0L" secondAttribute="trailing" constant="8" id="8Or-01-XeT"/>
                         <constraint firstItem="Zdq-Hd-K2c" firstAttribute="leading" secondItem="F2l-8L-w0f" secondAttribute="leading" constant="8" id="8Wf-bu-CBR"/>
@@ -111,6 +117,7 @@ Todos los derechos no concedidos expresamente a favor del Usuario o de terceros 
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usted acepta estos terminos y condiciones?" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tu8-z8-6OW">
                     <rect key="frame" x="175" y="343" width="250" height="41"/>
+                    <animations/>
                     <constraints>
                         <constraint firstAttribute="width" constant="250" id="8lb-ea-bxw"/>
                         <constraint firstAttribute="height" constant="41" id="Gmg-p9-MQ3"/>
@@ -120,6 +127,7 @@ Todos los derechos no concedidos expresamente a favor del Usuario o de terceros 
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
+            <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="7xe-zz-XjE" secondAttribute="trailing" constant="8" id="0pc-OZ-wO6"/>

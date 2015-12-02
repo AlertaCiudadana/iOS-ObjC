@@ -25,7 +25,7 @@
 //Login
 "The user cancelled the Facebook login." = "El usuario cancelo el login de Facebook";
 "Log In Error" = "Error de autenticación";
-"Please go to Settings -> Privacy -> Facebook and enable Danger Away!" = "Por favor habilita Danger Away! en Configuración -> Privacidad -> Facebook";
+"Please go to Settings -> Privacy -> Facebook and enable Alerta Ciudadana!" = "Por favor habilita Alerta Ciudadana! en Configuración -> Privacidad -> Facebook";
 
 //BlogTableTableViewController
 "No data is currently available. Please pull down to refresh."= "No se encontraron datos actualmente. Por favor arrastra hacia abajo la lista para recargarla.";

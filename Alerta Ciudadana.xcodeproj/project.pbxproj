@@ -53,6 +53,7 @@
 		8103BCFB19AD217900BCF4C7 /* TableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8103BCEA19AD217900BCF4C7 /* TableHeaderView.xib */; };
 		8103BD0C19AD21C300BCF4C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8103BD0719AD21C300BCF4C7 /* InfoPlist.strings */; };
 		8103BD0E19AD21C300BCF4C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8103BD0B19AD21C300BCF4C7 /* main.m */; };
+		A091162D1BFBE44900691D4C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A091162C1BFBE44900691D4C /* Parse.framework */; };
 		C425016D161BBAE400474BCD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4250169161BBAE400474BCD /* StoreKit.framework */; };
 		C4250170161BBAEE00474BCD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C425016F161BBAEE00474BCD /* libz.dylib */; };
 		D4DA79EF14D3345A0055F672 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DA79EE14D3345A0055F672 /* UIKit.framework */; };
@@ -103,7 +104,6 @@
 		DE8B31201AC1ED15006CA30C /* DWBubbleMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8B311F1AC1ED15006CA30C /* DWBubbleMenuButton.m */; };
 		DEA333CD1AAD0ED000DB5550 /* MyReportsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA333CB1AAD0ED000DB5550 /* MyReportsTableViewController.m */; };
 		DEA333CE1AAD0ED000DB5550 /* MyReportsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA333CC1AAD0ED000DB5550 /* MyReportsTableViewController.xib */; };
-		DEBCDB531BDD37A70048BCAC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBCDB521BDD37A70048BCAC /* Parse.framework */; };
 		DEBCDB551BDD37B00048BCAC /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBCDB541BDD37B00048BCAC /* ParseCrashReporting.framework */; };
 		DEBCDB5B1BDD37DE0048BCAC /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBCDB5A1BDD37DE0048BCAC /* ParseFacebookUtilsV4.framework */; };
 		DEBCDB681BDD389A0048BCAC /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBCDB641BDD389A0048BCAC /* FBSDKCoreKit.framework */; };
@@ -196,6 +196,7 @@
 		8103BD0919AD21C300BCF4C7 /* Alerta Ciudadana-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Alerta Ciudadana-Info.plist"; sourceTree = "<group>"; };
 		8103BD0A19AD21C300BCF4C7 /* Alerta Ciudadana-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Alerta Ciudadana-Prefix.pch"; sourceTree = "<group>"; };
 		8103BD0B19AD21C300BCF4C7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A091162C1BFBE44900691D4C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		C4250169161BBAE400474BCD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C425016F161BBAEE00474BCD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D4DA79EA14D3345A0055F672 /* Alerta Ciudadana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alerta Ciudadana.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -268,7 +269,6 @@
 		DEA333CA1AAD0ED000DB5550 /* MyReportsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyReportsTableViewController.h; sourceTree = "<group>"; };
 		DEA333CB1AAD0ED000DB5550 /* MyReportsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyReportsTableViewController.m; sourceTree = "<group>"; };
 		DEA333CC1AAD0ED000DB5550 /* MyReportsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyReportsTableViewController.xib; path = ../Classes/MyReportsTableViewController.xib; sourceTree = "<group>"; };
-		DEBCDB521BDD37A70048BCAC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		DEBCDB541BDD37B00048BCAC /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
 		DEBCDB5A1BDD37DE0048BCAC /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		DEBCDB641BDD389A0048BCAC /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
@@ -315,9 +315,9 @@
 				2C0E1D9B1AD63CFA00BF4259 /* EventKitUI.framework in Frameworks */,
 				2C0E1D991AD63CF300BF4259 /* EventKit.framework in Frameworks */,
 				2C0E1D971AD63CEA00BF4259 /* CoreTelephony.framework in Frameworks */,
+				A091162D1BFBE44900691D4C /* Parse.framework in Frameworks */,
 				2C0E1D951AD63CDF00BF4259 /* CoreMedia.framework in Frameworks */,
 				D4DA79F314D3345A0055F672 /* CoreGraphics.framework in Frameworks */,
-				DEBCDB531BDD37A70048BCAC /* Parse.framework in Frameworks */,
 				DE7CEE221A9F7E7F00967C8B /* AVFoundation.framework in Frameworks */,
 				D4DA7A0E14D334F30055F672 /* AudioToolbox.framework in Frameworks */,
 				DEBCDB7B1BDD439D0048BCAC /* Bolts.framework in Frameworks */,
@@ -746,12 +746,12 @@
 		DEBCDB601BDD37FE0048BCAC /* Parse */ = {
 			isa = PBXGroup;
 			children = (
+				A091162C1BFBE44900691D4C /* Parse.framework */,
 				DEBCDB801BDD43E10048BCAC /* ParseTwitterUtils.framework */,
 				DEBCDB7C1BDD43BC0048BCAC /* Parse.framework */,
 				DEBCDB7A1BDD439D0048BCAC /* Bolts.framework */,
 				DEBCDB5A1BDD37DE0048BCAC /* ParseFacebookUtilsV4.framework */,
 				DEBCDB541BDD37B00048BCAC /* ParseCrashReporting.framework */,
-				DEBCDB521BDD37A70048BCAC /* Parse.framework */,
 			);
 			name = Parse;
 			sourceTree = "<group>";

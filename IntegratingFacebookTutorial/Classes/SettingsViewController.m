@@ -252,7 +252,7 @@
 }
 
 - (IBAction)onClickContact:(id)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mailto:contact@dangeraway.com"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"mailto:contacto@denunciaecatepec.com"]];
 
 }
 
@@ -268,7 +268,7 @@
     
     //optionally set previewImageURL
 
-    [content setAppInvitePreviewImageURL:[NSURL URLWithString:@"http://zahuisoftware.com/dangeraway/"]];
+    [content setAppInvitePreviewImageURL:[NSURL URLWithString:@"http://http://denunciaecatepec.com/alertaciudadana"]];
     
     // present the dialog. Assumes self implements protocol `FBSDKAppInviteDialogDelegate`
     [FBSDKAppInviteDialog showFromViewController:self withContent:content delegate:self];   
@@ -402,7 +402,7 @@
         SLComposeViewController * composeVC = [SLComposeViewController composeViewControllerForServiceType: SLServiceTypeTwitter];
         [composeVC addImage:[UIImage imageNamed:@"logo.jpg"]];
         [composeVC setInitialText:@"DangerAway!."];
-        [composeVC addURL:[NSURL URLWithString:@"http://zahuisoftware.com/dangeraway/"]];
+        [composeVC addURL:[NSURL URLWithString:@"ttp://http://denunciaecatepec.com/alertaciudadana"]];
         [self presentViewController: composeVC animated: YES completion: nil];
     }
 }
@@ -413,7 +413,7 @@
     
     // This line will fill out the title, description, and thumbnail from
     // the URL that you are sharing and includes a link to that URL.
-    [shareBuilder setURLToShare:[NSURL URLWithString:@"http://zahuisoftware.com/dangeraway/"]];
+    [shareBuilder setURLToShare:[NSURL URLWithString:@"ttp://http://denunciaecatepec.com/alertaciudadana"]];
     //[shareBuilder setTitle:@"DangerAway!" description:@"" thumbnailURL:[NSURL URLWithString:@"http://zahuisoftware.com/dangeraway/img/DAFooterLogo.png"]];
     // Optionally attach a deep link ID for your mobile app
     //[shareBuilder setContentDeepLinkID:@"/restaurant/sf/1234567/"];
@@ -423,14 +423,14 @@
 
 
 - (IBAction)onClickFollowFacebook:(id)sender {
-    NSString *pageID = @"291293164323289";
+    NSString *pageID = @"506544932746650";
     
     BOOL isInstalled = [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"fb://"]];
     NSString *url = @"";
     if (isInstalled) {
         url = [NSString stringWithFormat:@"fb://profile/%@/",pageID];
     } else {
-        url = [NSString stringWithFormat:@"http://www.facebook.com/pages/DangerAwayApp/%@",pageID];
+        url = [NSString stringWithFormat:@"http://www.facebook.com/pages/AlertaEcatepec/%@",pageID];
     }
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
 
@@ -438,10 +438,10 @@
 - (IBAction)onClickFollowTwitter:(id)sender {
     NSURL *url = [NSURL URLWithString:@"twitter://"];
     if ( [[UIApplication sharedApplication] canOpenURL:url] ){
-        url = [NSURL URLWithString:@"twitter://user?screen_name=DangerAway"];
+        url = [NSURL URLWithString:@"twitter://user?screen_name=Alerta_Ecatepec"];
 
     } else {
-        url = [NSURL URLWithString:@"https://twitter.com/#!/DangerAway"];
+        url = [NSURL URLWithString:@"https://twitter.com/#!/Alerta_Ecatepec"];
 
     }
     [[UIApplication sharedApplication] openURL:url];
@@ -449,15 +449,19 @@
 }
 
 - (IBAction)onClickFollowGoogle:(id)sender {
-    NSURL *url = [NSURL URLWithString:@"gplus://"];
-    if ( [[UIApplication sharedApplication] canOpenURL:url] ){
-        url = [NSURL URLWithString:@"gplus://plus.google.com/u/0/111781782378974700520"];
-        
-    } else {
-        url = [NSURL URLWithString:@"https://plus.google.com/111781782378974700520/about?hl=es_419"];
-        
+    NSString *channelName = @"MegaMarchaEcate";
+    
+    NSURL *linkToAppURL = [NSURL URLWithString:[NSString stringWithFormat:@"youtube://user/%@",channelName]];
+    NSURL *linkToWebURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://www.youtube.com/user/%@",channelName]];
+    
+    if ([[UIApplication sharedApplication] canOpenURL:linkToAppURL]) {
+        // Can open the youtube app URL so launch the youTube app with this URL
+        [[UIApplication sharedApplication] openURL:linkToAppURL];
     }
-    [[UIApplication sharedApplication] openURL:url];
+    else{
+        // Can't open the youtube app URL so launch Safari instead
+        [[UIApplication sharedApplication] openURL:linkToWebURL];
+    }
 
 }
 

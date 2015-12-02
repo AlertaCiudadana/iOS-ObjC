@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Exo-Bold.ttf">
@@ -110,19 +110,20 @@
                         <constraint firstAttribute="height" constant="290" id="2T4-N4-Hst"/>
                         <constraint firstAttribute="width" constant="584" id="Ifj-tg-0vH"/>
                     </constraints>
-                    <string key="text">Terms and conditions for the use of "Danger Away!" application
-Every person (User) that have access to "Danger Away!" mobile application by simply accepting the download and / or register within the app via Facebook, recognize and willingly subject to the following terms and conditions:
+                    <mutableString key="text">Terms and conditions for the use of "Alerta Ciudadana!" application
+Every person (User) that have access to "Alerta Ciudadana!" mobile application by simply accepting the download and / or register within the app via Facebook, recognize and willingly subject to the following terms and conditions:
 CONDITIONS OF USE OF THE APPLICATION
 The information provided for users is for informational and reference purposes supporting the reports made. Any query that requires an official response must be carried out in the official sites for this purpose.
-Through the "Danger Away!" application, Users can share images or information and display content posted by other users; "Danger Away!" And its founders are not responsible for such content or for any claims or complaints arising from the quality, reliability or accuracy thereof are made.
-The "Danger Away!" Application may contain links to third party web sites ("Linked Sites") or images thereof. The Linked Sites are not under the control of "Danger Away!" And therefore will not be under no circumstances responsible for the content, accuracy or completeness of the information or the generation or transmission of virus by downloading files or images.
-You agree to use the application as well as social networking platforms only to post, send and receive messages and material that are proper and, where appropriate, be related to that particular service, recognizing the User "Danger Away!" Will you entitled to remove any comment, information, content or date Internet is displayed or disseminated and terminate accounts of users in its sole discretion and at any time, provided that unlawful conduct is discussed, fake content is disseminated or contrary to its owners, or is prejudicial to respect for others, morality and decency; User expressly waived any rights that might correspond by these cancellations
+Through the "Alerta Ciudadana!" application, Users can share images or information and display content posted by other users; "Alerta Ciudadana!" And its founders are not responsible for such content or for any claims or complaints arising from the quality, reliability or accuracy thereof are made.
+The "Alerta Ciudadana!" Application may contain links to third party web sites ("Linked Sites") or images thereof. The Linked Sites are not under the control of "Alerta Ciudadana!" And therefore will not be under no circumstances responsible for the content, accuracy or completeness of the information or the generation or transmission of virus by downloading files or images.
+You agree to use the application as well as social networking platforms only to post, send and receive messages and material that are proper and, where appropriate, be related to that particular service, recognizing the User "Alerta Ciudadana!" Will you entitled to remove any comment, information, content or date Internet is displayed or disseminated and terminate accounts of users in its sole discretion and at any time, provided that unlawful conduct is discussed, fake content is disseminated or contrary to its owners, or is prejudicial to respect for others, morality and decency; User expressly waived any rights that might correspond by these cancellations
 TRADEMARKS AND COPYRIGHT
-Brands Danger Away!, copyright and industrial property and domain names, designs and software for DANGER AWAY!, with their logos, literal elements, audio, multimedia and characteristics, and / or other products and services are trademarks of DANGER AWAY! and their founders, or are used under license rights from holder partners.
-You acknowledge and agree that reproduction is prohibited in any media technology provides content for any image, video, photography owned by DANGER AWAY! or are used under license from the owner, the use and storage of images, designs, text, multimedia material being only allowed, among others, provided that such use is expressly permitted by DANGER AWAY!; that such use is made according to the purposes DANGER AWAY! was created for or intended such service or material that uses them exclusively in personal benefit of the User without involving any financial benefit or to the User or any third party.
-Notwithstanding the foregoing, the User acknowledges that the "Danger Away!" Application displays content, images and information are freely distributed and which are provided by its users from public places and / or database application where the owners have placed it for free dissemination. DANGER AWAY !, no responsibility for accuracy of content and / or information displayed and the availability of any material that is linked from any other Internet site.
-All rights not expressly granted to the User or third parties in this legal notice terms and conditions of use are reserved exclusively for DANGER AWAY!, authorized partners or licensees.
-</string>
+Brands Alerta Ciudadana!, copyright and industrial property and domain names, designs and software for Alerta Ciudadana!, with their logos, literal elements, audio, multimedia and characteristics, and / or other products and services are trademarks of Alerta Ciudadana! and their founders, or are used under license rights from holder partners.
+You acknowledge and agree that reproduction is prohibited in any media technology provides content for any image, video, photography owned by Alerta Ciudadana! or are used under license from the owner, the use and storage of images, designs, text, multimedia material being only allowed, among others, provided that such use is expressly permitted by Alerta Ciudadana!; that such use is made according to the purposes Alerta Ciudadana! was created for or intended such service or material that uses them exclusively in personal benefit of the User without involving any financial benefit or to the User or any third party.
+Notwithstanding the foregoing, the User acknowledges that the "Alerta Ciudadana!" Application displays content, images and information are freely distributed and which are provided by its users from public places and / or database application where the owners have placed it for free dissemination. Alerta Ciudadana !, no responsibility for accuracy of content and / or information displayed and the availability of any material that is linked from any other Internet site.
+All rights not expressly granted to the User or third parties in this legal notice terms and conditions of use are reserved exclusively for Alerta Ciudadana!, authorized partners or licensees.
+
+</mutableString>
                     <fontDescription key="fontDescription" name="Exo-Bold" family="Exo" pointSize="12"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
