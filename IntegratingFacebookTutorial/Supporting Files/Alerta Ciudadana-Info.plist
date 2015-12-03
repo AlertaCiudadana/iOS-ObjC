@@ -36,7 +36,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.0.8</string>
+	<string>1.0.9</string>
 	<key>FacebookAppID</key>
 	<string>1483725858622511</string>
 	<key>FacebookDisplayName</key>
@@ -84,6 +84,15 @@
 				<key>NSExceptionRequiresForwardSecrecy</key>
 				<false/>
 				<key>NSIncludesSubdomains</key>
+				<true/>
+			</dict>
+			<key>googleapis.com</key>
+			<dict>
+				<key>NSExceptionRequiresForwardSecrecy</key>
+				<false/>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
 				<true/>
 			</dict>
 		</dict>
