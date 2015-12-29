@@ -20,11 +20,7 @@
  */
 
 #import "LoginViewController.h"
-#import <ParseFacebookUtilsV4/ParseFacebookUtilsV4.h>
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import "UserDetailsViewController.h"
-#import "MapViewController.h"
-#import "InfoViewController.h"
+
 
 @implementation LoginViewController{
     
@@ -60,6 +56,10 @@
     
     UIColor *navBackground = [Utilities colorwithHexString:@"#ffd900" alpha:1];
     [self.btnFacebookLogin setBackgroundColor:navBackground];
+
+    [self.signUpButton setBackgroundColor:navBackground];
+
+    
 
     //Query example
 //    PFQuery *citys = [PFQuery queryWithClassName:@"Report"];
@@ -297,6 +297,7 @@
 }
 
 
+
 -(BOOL)checkTerms{
     NSUserDefaults *dataSaved = [NSUserDefaults standardUserDefaults];  //load NSUserDefaults
     bool result = [dataSaved boolForKey:@"TermsConditionsAccepted"];
@@ -310,4 +311,18 @@
 
     return YES;
 }
+
+
+-(void)signUpButtonTouch:(id)sender{
+    [self _presentSignUpViewControllerAnimated:YES];
+}
+
+- (void)_presentSignUpViewControllerAnimated:(BOOL)animated {
+    
+    RegisterViewController *signUpController = [[RegisterViewController alloc] initWithNibName:@"SignUp" bundle:nil];
+    signUpController.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    signUpController.modalTransitionStyle = UIModalPresentationFullScreen;
+    [self presentViewController:signUpController animated:YES completion:nil];
+}
+
 @end

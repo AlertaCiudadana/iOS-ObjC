@@ -24,6 +24,14 @@
 #import "BaseViewController.h"
 #import "TermsConditionsViewController.h"
 #import "ContainerViewController.h"
+#import "RegisterViewController.h"
+#import <ParseFacebookUtilsV4/ParseFacebookUtilsV4.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import "UserDetailsViewController.h"
+#import "MapViewController.h"
+#import "InfoViewController.h"
+
+
 
 @interface LoginViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *btnFacebookLogin;
@@ -32,8 +40,12 @@
 @property (strong, nonatomic) IBOutlet UIWebView *backGif;
 @property (nonatomic, strong) IBOutlet UIActivityIndicatorView *activityIndicator;
 
+@property (weak, nonatomic) IBOutlet UIButton *signUpButton;
+
 - (IBAction)loginButtonTouchHandler:(id)sender;
 //- (IBAction)reportButton:(id)sender;
 - (IBAction)infoButton:(id)sender;
+
+- (IBAction)signUpButtonTouch:(id)sender;
 
 @end

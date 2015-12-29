@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Exo-Bold.ttf">
+            <string>Exo-Bold</string>
             <string>Exo-Bold</string>
             <string>Exo-Bold</string>
         </mutableArray>
@@ -18,6 +19,7 @@
                 <outlet property="backGif" destination="QfR-mw-ATu" id="j0v-d3-Aee"/>
                 <outlet property="btnFacebookLogin" destination="ABf-Xd-oei" id="9y3-YN-1Oa"/>
                 <outlet property="btnWhy" destination="cWi-n5-Xtp" id="Ss9-hR-W5J"/>
+                <outlet property="signUpButton" destination="NAM-63-ZCk" id="zyF-wC-AWe"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -34,12 +36,27 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoDanger" translatesAutoresizingMaskIntoConstraints="NO" id="xlT-k6-TS7">
                     <rect key="frame" x="20" y="20" width="560" height="78"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWi-n5-Xtp">
+                    <rect key="frame" x="213" y="436" width="175" height="36"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="175" id="auF-oV-6tc"/>
+                        <constraint firstAttribute="height" constant="36" id="orm-zD-ae5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Exo-Bold" family="Exo" pointSize="15"/>
+                    <state key="normal" title="Por qué con facebook?">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="infoButton:" destination="-1" eventType="touchUpInside" id="YzG-ak-lwV"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABf-Xd-oei">
                     <rect key="frame" x="163" y="373" width="274" height="55"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="ABf-Xd-oei" secondAttribute="height" multiplier="274:55" id="0Sl-qS-6yR"/>
-                        <constraint firstAttribute="width" constant="274" id="5CY-zi-AL4"/>
-                        <constraint firstAttribute="height" constant="55" id="Buw-1j-CSm"/>
+                        <constraint firstAttribute="width" constant="274" id="FgR-Ij-x3T"/>
+                        <constraint firstAttribute="height" constant="55" id="dyO-ye-oby"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Exo-Bold" family="Exo" pointSize="20"/>
                     <state key="normal" title="Inicia sesión con facebook">
@@ -59,37 +76,46 @@
                     <rect key="frame" x="282" y="282" width="37" height="37"/>
                     <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </activityIndicatorView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWi-n5-Xtp">
-                    <rect key="frame" x="213" y="478" width="175" height="36"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ó" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoT-aq-hJB">
+                    <rect key="frame" x="294" y="480" width="13" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAM-63-ZCk">
+                    <rect key="frame" x="213" y="509" width="175" height="36"/>
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="175" id="dqM-LI-DyY"/>
-                        <constraint firstAttribute="height" constant="36" id="qfI-F0-Co2"/>
-                    </constraints>
                     <fontDescription key="fontDescription" name="Exo-Bold" family="Exo" pointSize="15"/>
-                    <state key="normal" title="Por qué con facebook?">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Registrate">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
                     <connections>
-                        <action selector="infoButton:" destination="-1" eventType="touchUpInside" id="YzG-ak-lwV"/>
+                        <action selector="infoButton:" destination="-1" eventType="touchUpInside" id="dkk-8b-fdT"/>
+                        <action selector="signUpButtonTouch:" destination="-1" eventType="touchUpInside" id="NeI-pT-jx9"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="cWi-n5-Xtp" firstAttribute="top" secondItem="ABf-Xd-oei" secondAttribute="bottom" constant="50" id="2Ms-qx-6QU"/>
-                <constraint firstAttribute="bottom" secondItem="cWi-n5-Xtp" secondAttribute="bottom" constant="86" id="AET-QK-9wS"/>
-                <constraint firstItem="QfR-mw-ATu" firstAttribute="top" secondItem="1" secondAttribute="top" id="CRl-Sw-Oz9"/>
-                <constraint firstAttribute="trailing" secondItem="xlT-k6-TS7" secondAttribute="trailing" constant="20" symbolic="YES" id="Cuw-Lh-IjM"/>
-                <constraint firstAttribute="centerX" secondItem="cWi-n5-Xtp" secondAttribute="centerX" id="Kfi-lq-urU"/>
-                <constraint firstAttribute="trailing" secondItem="QfR-mw-ATu" secondAttribute="trailing" id="M6m-YQ-fBr"/>
-                <constraint firstAttribute="centerX" secondItem="ABf-Xd-oei" secondAttribute="centerX" id="VXr-gT-pK7"/>
-                <constraint firstItem="xlT-k6-TS7" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" symbolic="YES" id="c7k-rO-lak"/>
-                <constraint firstAttribute="centerX" secondItem="10" secondAttribute="centerX" id="f71-5Y-iub"/>
-                <constraint firstItem="QfR-mw-ATu" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="f9A-jE-dS5"/>
-                <constraint firstItem="xlT-k6-TS7" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="vUX-kW-38I"/>
-                <constraint firstAttribute="centerY" secondItem="10" secondAttribute="centerY" id="yzV-Yg-hwf"/>
-                <constraint firstAttribute="bottom" secondItem="QfR-mw-ATu" secondAttribute="bottom" id="zZg-Xd-pj1"/>
+                <constraint firstAttribute="trailing" secondItem="xlT-k6-TS7" secondAttribute="trailing" constant="20" symbolic="YES" id="3XZ-ya-hE1"/>
+                <constraint firstAttribute="centerX" secondItem="10" secondAttribute="centerX" id="43M-uY-l0b"/>
+                <constraint firstAttribute="centerY" secondItem="10" secondAttribute="centerY" id="4Fi-uY-cYJ"/>
+                <constraint firstItem="NAM-63-ZCk" firstAttribute="height" secondItem="cWi-n5-Xtp" secondAttribute="height" id="Cqs-aE-zid"/>
+                <constraint firstItem="NAM-63-ZCk" firstAttribute="top" secondItem="eoT-aq-hJB" secondAttribute="bottom" constant="8" id="HKA-mA-GU3"/>
+                <constraint firstItem="QfR-mw-ATu" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="L3h-4j-Vdm"/>
+                <constraint firstAttribute="bottom" secondItem="cWi-n5-Xtp" secondAttribute="bottom" constant="128" id="TE5-3f-eXd"/>
+                <constraint firstItem="NAM-63-ZCk" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="Txq-c8-7aU"/>
+                <constraint firstItem="QfR-mw-ATu" firstAttribute="top" secondItem="1" secondAttribute="top" id="V5l-vG-SXF"/>
+                <constraint firstAttribute="centerX" secondItem="ABf-Xd-oei" secondAttribute="centerX" id="VUm-YB-QjX"/>
+                <constraint firstItem="xlT-k6-TS7" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" symbolic="YES" id="W9M-Oe-ygr"/>
+                <constraint firstItem="NAM-63-ZCk" firstAttribute="width" secondItem="cWi-n5-Xtp" secondAttribute="width" id="ch7-oI-zOQ"/>
+                <constraint firstItem="eoT-aq-hJB" firstAttribute="top" secondItem="cWi-n5-Xtp" secondAttribute="bottom" constant="8" id="eY9-dE-INs"/>
+                <constraint firstAttribute="trailing" secondItem="QfR-mw-ATu" secondAttribute="trailing" id="iEW-an-9ns"/>
+                <constraint firstAttribute="centerX" secondItem="cWi-n5-Xtp" secondAttribute="centerX" id="ojz-cL-eM9"/>
+                <constraint firstItem="xlT-k6-TS7" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="pEO-L0-w1M"/>
+                <constraint firstItem="cWi-n5-Xtp" firstAttribute="top" secondItem="ABf-Xd-oei" secondAttribute="bottom" constant="8" id="utu-Ns-fIl"/>
+                <constraint firstAttribute="bottom" secondItem="QfR-mw-ATu" secondAttribute="bottom" id="vND-Jo-eJE"/>
+                <constraint firstItem="eoT-aq-hJB" firstAttribute="centerX" secondItem="cWi-n5-Xtp" secondAttribute="centerX" id="yEs-Ox-K7y"/>
             </constraints>
             <point key="canvasLocation" x="345" y="283"/>
         </view>
