@@ -27,7 +27,6 @@
 }
 
 -(void)setUpView{
-    self.usernameField.delegate = self;
     self.firstNameField.delegate = self;
     self.lastNameField.delegate = self;
     self.mailField.delegate = self;
@@ -36,7 +35,6 @@
 }
 
 - (void)registerButton:(id)sender{
-    NSString *username = [self.usernameField text];
     NSString *firstName = [self.firstNameField text];
     NSString *lastName = [self.lastNameField text];
     NSString *mail = [self.mailField text];
@@ -44,31 +42,50 @@
     NSString *repeatPassword = [self.repeatPasswordField text];
     NSString *completeName = [NSString stringWithFormat:@"%@ %@",firstName,lastName];
     
-    if (([username length] > 0) && ([firstName length] > 0) && ([lastName length] > 0) && ([mail length] > 0) && ([password length] > 0) && ([repeatPassword length] > 0) ){
+    if (([firstName length] > 0) && ([lastName length] > 0) && ([mail length] > 0) && ([password length] > 0) && ([repeatPassword length] > 0) ){
         if (password == repeatPassword) {
-            
-            PFUser *newUser = [[PFUser alloc] init];
-            newUser.username = username;
-            newUser.password = password;
-            newUser.email = mail;
-            
-            [newUser setObject:completeName forKey:@"name"];
-            
-            [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+            if (([password length] >= 6)) {
                 
-                if (succeeded){
-                    NSLog(@"registered!");
-                    [self showMessageAlert:NSLocalizedString(@"Success", nil) withMessage:@"Registration was successful, please verify your email address"];
-                }else{
-                    NSLog(@"error %@",error.localizedDescription);
-                    if (error.code == 203){
-                        [self showMessageAlert:@"Error" withMessage:NSLocalizedString(@"The email address has already been taken", nil)];
-                    }else{
-                        [self showMessageAlert:@"Error" withMessage:NSLocalizedString(error.localizedDescription, nil)];
-                    }
+                PFUser *newUser = [[PFUser alloc] init];
+                newUser.username = mail;
+                newUser.password = password;
+                newUser.email = mail;
+                
+                [newUser setObject:completeName forKey:@"name"];
+                
+                [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+                    
+                    if (succeeded){
+                        NSLog(@"registered!");
+                        NSString * language = [[NSLocale preferredLanguages] objectAtIndex:0];
+                        if ([language hasPrefix:@"es"]) {
+                            language = @"es";
+                        }
 
-                }
-            }];
+                        PFInstallation *installation = [PFInstallation currentInstallation];
+                        installation[@"user"] = [PFUser currentUser];
+                        [installation addUniqueObject:language forKey:@"channels"];
+                        [installation saveInBackground];
+
+                        [self dismissViewControllerAnimated:true completion:nil];
+                        [self showMessageAlert:NSLocalizedString(@"Success", nil) withMessage:@"Registration was successful, please verify your email address"];
+                    }else{
+                        NSLog(@"error %@",error.localizedDescription);
+                        if (error.code == 203){
+                            [self showMessageAlert:@"Error" withMessage:NSLocalizedString(@"The email address has already been taken", nil)];
+                        }else if (error.code == 202){
+                            [self showMessageAlert:@"Error" withMessage:NSLocalizedString(@"The email address has already been taken", nil)];
+                        }else{
+                            [self showMessageAlert:@"Error" withMessage:NSLocalizedString(error.localizedDescription, nil)];
+                        }
+                        
+                    }
+                }];
+            
+            }else{
+                [self showMessageAlert:NSLocalizedString(@"Error", nil) withMessage:NSLocalizedString(@"The password must be at least 6 characters, please try again", nil)];
+            }
+            
             
         }else{
             [self showMessageAlert:NSLocalizedString(@"Error", nil) withMessage:NSLocalizedString(@"The Password doesn't match, please try again", nil)];
@@ -129,6 +146,20 @@
     }
     
     return YES;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.firstNameField resignFirstResponder];
+    [self.lastNameField resignFirstResponder];
+    [self.mailField resignFirstResponder];
+    [self.passwordField resignFirstResponder];
+    [self.repeatPasswordField resignFirstResponder];
 }
 
 /*

@@ -56,10 +56,8 @@
     
     UIColor *navBackground = [Utilities colorwithHexString:@"#ffd900" alpha:1];
     [self.btnFacebookLogin setBackgroundColor:navBackground];
-
+    [self.loginButton setBackgroundColor:navBackground];
     [self.signUpButton setBackgroundColor:navBackground];
-
-    
 
     //Query example
 //    PFQuery *citys = [PFQuery queryWithClassName:@"Report"];
@@ -131,6 +129,9 @@
 
    // NSData *gif = [NSData dataWithContentsOfFile:filePath];
    // [self.backGif loadData:gif MIMEType:@"image/gif" textEncodingName:nil baseURL:nil];
+    
+    self.userTextField.delegate = self;
+    self.passwordTextField.delegate = self;
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -260,6 +261,42 @@
     
 }
 
+
+-(void)loginAction:(id)sender{
+    NSString *userText = self.userTextField.text;
+    NSString *passText = self.passwordTextField.text;
+    
+    [PFUser logInWithUsernameInBackground:userText password:passText block:^(PFUser * _Nullable user, NSError * _Nullable error) {
+        if (user) {
+            NSLog(@"user %@",user);
+            
+            if (![[user objectForKey:@"emailVerified"] boolValue]) {
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:NSLocalizedString(@"You need to verify your email adress.", nil) delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+                [alert show];
+                return;
+            }else{
+                NSLog(@"Verified");
+                [self _presentMapViewControllerAnimated:YES];
+            }
+            
+        }else{
+            NSLog(@"login error %@",error.localizedDescription);
+            [self showMessageAlert:@"Error" withMessage:NSLocalizedString(@"Please verify user and password.", nil)];
+        }
+    }];
+    
+}
+
+-(void)showMessageAlert:(NSString *)title  withMessage:(NSString*)message{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+                                                    message:message
+                                                   delegate:self
+                                          cancelButtonTitle:NSLocalizedString(@"Ok",nil)
+                                          otherButtonTitles:nil,nil];
+    [alert show];
+    
+}
+
 #pragma mark -
 #pragma mark UserDetailsViewController
 
@@ -323,6 +360,17 @@
     signUpController.modalPresentationStyle = UIModalPresentationOverCurrentContext;
     signUpController.modalTransitionStyle = UIModalPresentationFullScreen;
     [self presentViewController:signUpController animated:YES completion:nil];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.userTextField resignFirstResponder];
+    [self.passwordTextField resignFirstResponder];
 }
 
 @end

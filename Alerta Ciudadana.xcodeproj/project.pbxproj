@@ -25,6 +25,7 @@
 		2C3D77441ABFC956004FE75F /* XYInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3D77411ABFC956004FE75F /* XYInputView.m */; };
 		2C3D77451ABFC956004FE75F /* XYLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3D77431ABFC956004FE75F /* XYLoadingView.m */; };
 		2C3D77481ABFC968004FE75F /* GCPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3D77471ABFC968004FE75F /* GCPlaceholderTextView.m */; };
+		2C3FD2DF1C33BBD00035371E /* SignUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C3FD2E11C33BBD00035371E /* SignUp.xib */; };
 		2C496FC61AD607BF003E74D0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C496FC51AD607BF003E74D0 /* AdSupport.framework */; };
 		2C496FC81AD607EA003E74D0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C496FC71AD607EA003E74D0 /* MessageUI.framework */; };
 		2C4C99FA1AB36D9D00FDC2C6 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4C99F81AB36D9D00FDC2C6 /* SettingsViewController.m */; };
@@ -37,7 +38,6 @@
 		2C69B7BB1AB0F6B50059440D /* carsiPad.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2C69B7B81AB0F6B50059440D /* carsiPad.gif */; };
 		2C69B7BC1AB0F6B50059440D /* cars2iPad.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2C69B7B91AB0F6B50059440D /* cars2iPad.gif */; };
 		2C8C35EC1C320B4F00E948C7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8C35EA1C320B2A00E948C7 /* Parse.framework */; };
-		2C8C35EF1C32265800E948C7 /* SignUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C8C35EE1C32265800E948C7 /* SignUp.xib */; };
 		2C8C35F31C32EC7700E948C7 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C35F21C32EC7700E948C7 /* RegisterViewController.m */; };
 		2C8F47061AA9940E00BE159B /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8F47041AA9940E00BE159B /* InfoViewController.m */; };
 		2CDB55A21ADB179700A21CAD /* InstructionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDB55A01ADB179700A21CAD /* InstructionsView.m */; };
@@ -161,6 +161,9 @@
 		2C3D77431ABFC956004FE75F /* XYLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYLoadingView.m; sourceTree = "<group>"; };
 		2C3D77461ABFC968004FE75F /* GCPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCPlaceholderTextView.h; sourceTree = "<group>"; };
 		2C3D77471ABFC968004FE75F /* GCPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCPlaceholderTextView.m; sourceTree = "<group>"; };
+		2C3FD2DE1C33BB6A0035371E /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/LoginViewController.xib; sourceTree = "<group>"; };
+		2C3FD2E01C33BBD00035371E /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/SignUp.xib; sourceTree = "<group>"; };
+		2C3FD2E21C33BBD20035371E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SignUp.xib; sourceTree = "<group>"; };
 		2C496FC51AD607BF003E74D0 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		2C496FC71AD607EA003E74D0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		2C4C99F71AB36D9D00FDC2C6 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
@@ -175,10 +178,8 @@
 		2C69B7B81AB0F6B50059440D /* carsiPad.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = carsiPad.gif; sourceTree = "<group>"; };
 		2C69B7B91AB0F6B50059440D /* cars2iPad.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cars2iPad.gif; sourceTree = "<group>"; };
 		2C8C35EA1C320B2A00E948C7 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		2C8C35EE1C32265800E948C7 /* SignUp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SignUp.xib; path = IntegratingFacebookTutorial/Classes/SignUp.xib; sourceTree = SOURCE_ROOT; };
 		2C8C35F11C32EC7700E948C7 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		2C8C35F21C32EC7700E948C7 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
-		2C8C35F91C32F1B900E948C7 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/LoginViewController.xib; sourceTree = "<group>"; };
 		2C8F47031AA9940E00BE159B /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		2C8F47041AA9940E00BE159B /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		2CDB559F1ADB179700A21CAD /* InstructionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstructionsView.h; sourceTree = "<group>"; };
@@ -410,7 +411,7 @@
 		2C8C35ED1C3225F100E948C7 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				2C8C35EE1C32265800E948C7 /* SignUp.xib */,
+				2C3FD2E11C33BBD00035371E /* SignUp.xib */,
 			);
 			name = Register;
 			sourceTree = "<group>";
@@ -912,7 +913,7 @@
 				DE35F1DF1AB1237300657CA4 /* MyReportsNavController.xib in Resources */,
 				DE4ADB1B1ABA1EAD00242C98 /* BlogTableTableViewController.xib in Resources */,
 				DE0FACA41AD4895B00D53DD8 /* InfoViewController.xib in Resources */,
-				2C8C35EF1C32265800E948C7 /* SignUp.xib in Resources */,
+				2C3FD2DF1C33BBD00035371E /* SignUp.xib in Resources */,
 				DE3F45941AB935DD00901A66 /* Exo-Light.ttf in Resources */,
 				DEF2CA231ACF4C9400BC6721 /* GooglePlus.bundle in Resources */,
 				DE7CEE121A9F7DD300967C8B /* GoogleMaps.bundle in Resources */,
@@ -1021,6 +1022,16 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
+		2C3FD2E11C33BBD00035371E /* SignUp.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C3FD2E01C33BBD00035371E /* es */,
+				2C3FD2E21C33BBD20035371E /* Base */,
+			);
+			name = SignUp.xib;
+			path = IntegratingFacebookTutorial/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
 		2CDB55AC1ADB35E900A21CAD /* InstructionsView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1092,7 +1103,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DE0FACAF1AD48A3600D53DD8 /* Base */,
-				2C8C35F91C32F1B900E948C7 /* es */,
+				2C3FD2DE1C33BB6A0035371E /* es */,
 			);
 			name = LoginViewController.xib;
 			sourceTree = "<group>";

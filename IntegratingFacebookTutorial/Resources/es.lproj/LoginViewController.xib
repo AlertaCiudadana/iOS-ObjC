@@ -10,6 +10,7 @@
             <string>Exo-Bold</string>
             <string>Exo-Bold</string>
             <string>Exo-Bold</string>
+            <string>Exo-Bold</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -19,7 +20,10 @@
                 <outlet property="backGif" destination="QfR-mw-ATu" id="j0v-d3-Aee"/>
                 <outlet property="btnFacebookLogin" destination="ABf-Xd-oei" id="9y3-YN-1Oa"/>
                 <outlet property="btnWhy" destination="cWi-n5-Xtp" id="Ss9-hR-W5J"/>
+                <outlet property="loginButton" destination="Vba-Sd-NvB" id="aVn-yC-m50"/>
+                <outlet property="passwordTextField" destination="5po-o3-AVr" id="MBK-OG-fjj"/>
                 <outlet property="signUpButton" destination="NAM-63-ZCk" id="zyF-wC-AWe"/>
+                <outlet property="userTextField" destination="IKB-is-JgG" id="GAc-Nu-qnP"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -90,30 +94,73 @@
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
-                        <action selector="signUpButtonTouch:" destination="-1" eventType="touchUpInside" id="NeI-pT-jx9"/>
+                        <action selector="signUpButtonTouch:" destination="-1" eventType="touchUpInside" id="p7E-cz-f1O"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="IKB-is-JgG">
+                    <rect key="frame" x="163" y="232" width="274" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5po-o3-AVr">
+                    <rect key="frame" x="163" y="270" width="274" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="274" id="olb-M3-Ip3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vba-Sd-NvB">
+                    <rect key="frame" x="163" y="310" width="274" height="55"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="175" id="ECl-H7-aSr"/>
+                        <constraint firstAttribute="height" constant="36" id="ZGf-5S-je9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Exo-Bold" family="Exo" pointSize="20"/>
+                    <state key="normal" title="Iniciar sesión">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ECl-H7-aSr"/>
+                            <exclude reference="ZGf-5S-je9"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="Vdq-MH-0iR"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="Vba-Sd-NvB" firstAttribute="top" secondItem="5po-o3-AVr" secondAttribute="bottom" constant="10" id="1oc-pO-fKo"/>
                 <constraint firstAttribute="trailing" secondItem="xlT-k6-TS7" secondAttribute="trailing" constant="20" symbolic="YES" id="3XZ-ya-hE1"/>
                 <constraint firstAttribute="centerX" secondItem="10" secondAttribute="centerX" id="43M-uY-l0b"/>
                 <constraint firstAttribute="centerY" secondItem="10" secondAttribute="centerY" id="4Fi-uY-cYJ"/>
+                <constraint firstItem="Vba-Sd-NvB" firstAttribute="height" secondItem="ABf-Xd-oei" secondAttribute="height" id="8Qh-gE-Acb"/>
+                <constraint firstItem="IKB-is-JgG" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="9W5-9Z-Ikg"/>
                 <constraint firstItem="NAM-63-ZCk" firstAttribute="height" secondItem="cWi-n5-Xtp" secondAttribute="height" id="Cqs-aE-zid"/>
+                <constraint firstItem="ABf-Xd-oei" firstAttribute="top" secondItem="Vba-Sd-NvB" secondAttribute="bottom" constant="8" id="FLE-v9-nHH"/>
                 <constraint firstItem="NAM-63-ZCk" firstAttribute="top" secondItem="eoT-aq-hJB" secondAttribute="bottom" constant="8" id="HKA-mA-GU3"/>
+                <constraint firstItem="Vba-Sd-NvB" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="Hpd-bJ-xg2"/>
                 <constraint firstItem="QfR-mw-ATu" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="L3h-4j-Vdm"/>
                 <constraint firstAttribute="bottom" secondItem="cWi-n5-Xtp" secondAttribute="bottom" constant="128" id="TE5-3f-eXd"/>
                 <constraint firstItem="NAM-63-ZCk" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="Txq-c8-7aU"/>
                 <constraint firstItem="QfR-mw-ATu" firstAttribute="top" secondItem="1" secondAttribute="top" id="V5l-vG-SXF"/>
                 <constraint firstAttribute="centerX" secondItem="ABf-Xd-oei" secondAttribute="centerX" id="VUm-YB-QjX"/>
                 <constraint firstItem="xlT-k6-TS7" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" symbolic="YES" id="W9M-Oe-ygr"/>
+                <constraint firstItem="IKB-is-JgG" firstAttribute="width" secondItem="5po-o3-AVr" secondAttribute="width" id="cer-jO-VK1"/>
                 <constraint firstItem="NAM-63-ZCk" firstAttribute="width" secondItem="cWi-n5-Xtp" secondAttribute="width" id="ch7-oI-zOQ"/>
                 <constraint firstItem="eoT-aq-hJB" firstAttribute="top" secondItem="cWi-n5-Xtp" secondAttribute="bottom" constant="8" id="eY9-dE-INs"/>
                 <constraint firstAttribute="trailing" secondItem="QfR-mw-ATu" secondAttribute="trailing" id="iEW-an-9ns"/>
+                <constraint firstItem="5po-o3-AVr" firstAttribute="top" secondItem="IKB-is-JgG" secondAttribute="bottom" constant="8" id="mEr-5A-s0b"/>
+                <constraint firstItem="Vba-Sd-NvB" firstAttribute="width" secondItem="ABf-Xd-oei" secondAttribute="width" id="nCf-N8-BNk"/>
                 <constraint firstAttribute="centerX" secondItem="cWi-n5-Xtp" secondAttribute="centerX" id="ojz-cL-eM9"/>
                 <constraint firstItem="xlT-k6-TS7" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="pEO-L0-w1M"/>
                 <constraint firstItem="cWi-n5-Xtp" firstAttribute="top" secondItem="ABf-Xd-oei" secondAttribute="bottom" constant="8" id="utu-Ns-fIl"/>
                 <constraint firstAttribute="bottom" secondItem="QfR-mw-ATu" secondAttribute="bottom" id="vND-Jo-eJE"/>
+                <constraint firstItem="5po-o3-AVr" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="xf6-F4-Wy8"/>
                 <constraint firstItem="eoT-aq-hJB" firstAttribute="centerX" secondItem="cWi-n5-Xtp" secondAttribute="centerX" id="yEs-Ox-K7y"/>
             </constraints>
             <point key="canvasLocation" x="345" y="283"/>

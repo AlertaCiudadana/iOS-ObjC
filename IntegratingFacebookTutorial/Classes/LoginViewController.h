@@ -33,7 +33,7 @@
 
 
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *btnFacebookLogin;
 @property (weak, nonatomic) IBOutlet UIButton *btnWhy;
 
@@ -41,11 +41,15 @@
 @property (nonatomic, strong) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @property (weak, nonatomic) IBOutlet UIButton *signUpButton;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+@property (weak, nonatomic) IBOutlet UITextField *userTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 
 - (IBAction)loginButtonTouchHandler:(id)sender;
 //- (IBAction)reportButton:(id)sender;
 - (IBAction)infoButton:(id)sender;
 
 - (IBAction)signUpButtonTouch:(id)sender;
+- (IBAction)loginAction:(id)sender;
 
 @end

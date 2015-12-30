@@ -43,6 +43,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 - (void)_loadData {
     // If the user is already logged in, display any previously cached values before we get the latest from Facebook.
     if ([PFUser currentUser]) {
@@ -55,47 +56,51 @@
     [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:parameters]
      startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error)
      {
-         
-         NSMutableDictionary *userProfile = [NSMutableDictionary dictionaryWithCapacity:7];
-         
-         NSString *facebookID = result[@"id"];
-         if (facebookID) {
-             userProfile[@"facebookId"] = facebookID;
+         if (!error) {
+             NSMutableDictionary *userProfile = [NSMutableDictionary dictionaryWithCapacity:7];
+             
+             NSString *facebookID = result[@"id"];
+             if (facebookID) {
+                 userProfile[@"facebookId"] = facebookID;
+             }
+             
+             NSString *name = result[@"name"];
+             if (name) {
+                 userProfile[@"name"] = name;
+             }
+             
+             NSString *location = result[@"location"][@"name"];
+             if (location) {
+                 userProfile[@"location"] = location;
+             }
+             
+             NSString *gender = result[@"gender"];
+             if (gender) {
+                 userProfile[@"gender"] = gender;
+             }
+             
+             NSString *birthday = result[@"birthday"];
+             if (birthday) {
+                 userProfile[@"birthday"] = birthday;
+             }
+             
+             NSString *relationshipStatus = result[@"relationship_status"];
+             if (relationshipStatus) {
+                 userProfile[@"relationship"] = relationshipStatus;
+             }
+             
+             userProfile[@"pictureURL"] = [NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", facebookID];
+             
+             
+             [[PFUser currentUser] setObject:userProfile forKey:@"profile"];
+             [[PFUser currentUser] saveInBackground];
+             
+             [self _updateProfileData];
+         }else{
+             NSLog(@"Not fb user");
+             PFUser *myUser = [PFUser currentUser];
+             self.nameLabel.text = myUser.username;
          }
-         
-         NSString *name = result[@"name"];
-         if (name) {
-             userProfile[@"name"] = name;
-         }
-         
-         NSString *location = result[@"location"][@"name"];
-         if (location) {
-             userProfile[@"location"] = location;
-         }
-         
-         NSString *gender = result[@"gender"];
-         if (gender) {
-             userProfile[@"gender"] = gender;
-         }
-         
-         NSString *birthday = result[@"birthday"];
-         if (birthday) {
-             userProfile[@"birthday"] = birthday;
-         }
-         
-         NSString *relationshipStatus = result[@"relationship_status"];
-         if (relationshipStatus) {
-             userProfile[@"relationship"] = relationshipStatus;
-         }
-         
-         userProfile[@"pictureURL"] = [NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", facebookID];
-
-         
-         [[PFUser currentUser] setObject:userProfile forKey:@"profile"];
-         [[PFUser currentUser] saveInBackground];
-
-         [self _updateProfileData];
-         
          
      }];
     

@@ -47,7 +47,7 @@ static NSString * const kClientIDGoogle = @"AIzaSyCwMoFo_eQeuf6Anea-5nXRItwS9L6G
     [[FBSDKApplicationDelegate sharedInstance] application:application
                              didFinishLaunchingWithOptions:launchOptions];
     
-    if ([PFUser currentUser] && [PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) {
+    if (([PFUser currentUser] && [PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) || [PFUser currentUser]) {
         BaseViewController *tabBar = [[BaseViewController alloc] initWithNibName:nil bundle:nil];
         self.window.rootViewController = tabBar;
     }else {
