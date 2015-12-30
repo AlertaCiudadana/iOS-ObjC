@@ -59,3 +59,15 @@
 "en02" = "es02";
 "en03" = "es03";
 "en04" = "es04";
+
+// Register view controller
+"Ok" = "Aceptar";
+"Please complete all fields" = "Por favor completa todos campos";
+"The Password doesn't match, please try again" = "La contraseña no coincide, por favor intenta nuevamente";
+"registration was successful, please verify your email address" = "Registro correcto, por favor verifica tu correo electrónico";
+"invalid email address" = "Verifica tu correo electrónico";
+"The Internet connection appears to be offline." = "Por favor verifica tu conexión de Internet";
+"The email address has already been taken" = "Este correo ya fue registrado";
+
+"Success" = "Correcto";
+"Registration was successful, please verify your email address" = "Registro correcto, por favor verifica tu cuenta de correo electrónico";

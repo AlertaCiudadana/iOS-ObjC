@@ -87,10 +87,9 @@
                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" name="Exo-Bold" family="Exo" pointSize="15"/>
                     <state key="normal" title="Registrate">
-                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
-                        <action selector="infoButton:" destination="-1" eventType="touchUpInside" id="dkk-8b-fdT"/>
                         <action selector="signUpButtonTouch:" destination="-1" eventType="touchUpInside" id="NeI-pT-jx9"/>
                     </connections>
                 </button>

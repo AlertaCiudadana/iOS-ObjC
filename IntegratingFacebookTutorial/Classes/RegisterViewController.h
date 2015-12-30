@@ -10,13 +10,15 @@
 #import <Parse/Parse.h>
 #import "Utilities.h"
 
-@interface RegisterViewController : UIViewController
+@interface RegisterViewController : UIViewController <UITextFieldDelegate>
 
+@property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *firstNameField;
 @property (weak, nonatomic) IBOutlet UITextField *lastNameField;
 @property (weak, nonatomic) IBOutlet UITextField *mailField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
 @property (weak, nonatomic) IBOutlet UITextField *repeatPasswordField;
+
 
 @property (weak, nonatomic) IBOutlet UIButton *signUpButton;
 @property (weak, nonatomic) IBOutlet UIButton *alreadyAccountButton;
