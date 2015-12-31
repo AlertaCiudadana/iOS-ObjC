@@ -271,7 +271,7 @@
             NSLog(@"user %@",user);
             
             if (![[user objectForKey:@"emailVerified"] boolValue]) {
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:NSLocalizedString(@"You need to verify your email adress.", nil) delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:NSLocalizedString(@"You need to verify first your email address.", nil) delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
                 [alert show];
                 return;
             }else{

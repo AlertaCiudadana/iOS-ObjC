@@ -73,4 +73,4 @@
 "Registration was successful, please verify your email address" = "Registro correcto, por favor verifica tu cuenta de correo electrónico";
 "The password must be at least 6 characters, please try again" = "La contraseña debe ser minimo de 6 caracteres";
 "Please verify user and password." = "Por favor verifica el usuario y contraseña.";
-"You need to verify your email adress." = "Es necesario que verifiques tu correo electrónico";
+"You need to verify first your email address." = "Es necesario que verifiques tu correo electrónico primero.";
