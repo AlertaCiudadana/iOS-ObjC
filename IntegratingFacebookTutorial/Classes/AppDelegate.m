@@ -25,7 +25,9 @@
 
 @implementation AppDelegate
 //static NSString * const kClientID = @"AIzaSyAsaxcNYu-FvXDSNGOGd6wZz_EkoB9J-2U";
-static NSString * const kClientIDGoogle = @"AIzaSyCwMoFo_eQeuf6Anea-5nXRItwS9L6GZzU";
+static NSString * const kClientIDGoogle = @"AIzaSyCGgbEVyb8iiKEDTvcIGs48axFusNp2D0g";
+static NSString * const kAppParseId = @"Z47CMTmBLbAwGwFT0NQeN9sLx22YMTrn7bDKCXVl";
+static NSString * const kParseClientId = @"mjPpw0ieszGk2Xgd9B4qW0Ueqevbz7wRUlTemc97";
 
 #pragma mark -
 #pragma mark UIApplicationDelegate
@@ -38,7 +40,7 @@ static NSString * const kClientIDGoogle = @"AIzaSyCwMoFo_eQeuf6Anea-5nXRItwS9L6G
     // ****************************************************************************
     // Fill in with your Parse credentials:
     // ****************************************************************************
-    [Parse setApplicationId:@"Z47CMTmBLbAwGwFT0NQeN9sLx22YMTrn7bDKCXVl" clientKey:@"mjPpw0ieszGk2Xgd9B4qW0Ueqevbz7wRUlTemc97"];
+    [Parse setApplicationId: kAppParseId clientKey:kParseClientId];
 
     // ****************************************************************************
     // Your Facebook application id is configured in Info.plist.
