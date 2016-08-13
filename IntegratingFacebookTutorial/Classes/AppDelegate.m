@@ -25,9 +25,9 @@
 
 @implementation AppDelegate
 //static NSString * const kClientID = @"AIzaSyAsaxcNYu-FvXDSNGOGd6wZz_EkoB9J-2U";
-static NSString * const kClientIDGoogle = @"AIzaSyCGgbEVyb8iiKEDTvcIGs48axFusNp2D0g";
-static NSString * const kAppParseId = @"Z47CMTmBLbAwGwFT0NQeN9sLx22YMTrn7bDKCXVl";
-static NSString * const kParseClientId = @"mjPpw0ieszGk2Xgd9B4qW0Ueqevbz7wRUlTemc97";
+static NSString * const kClientIDGoogle = @"your google maps key";
+static NSString * const kAppParseId = @"your parse id";
+static NSString * const kParseClientId = @"your parse client id";
 
 #pragma mark -
 #pragma mark UIApplicationDelegate
