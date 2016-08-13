@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "LoginViewController.h"
-#import <FacebookSDK/FacebookSDK.h>
+
 #import <Social/Social.h>
-#import <GooglePlus/GooglePlus.h>
 #import "TerminosViewController.h"
 #import "XYAlertView.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>

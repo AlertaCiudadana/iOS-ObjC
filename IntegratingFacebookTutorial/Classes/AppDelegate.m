@@ -97,7 +97,8 @@ static NSString * const kClientIDGoogle = @"AIzaSyCwMoFo_eQeuf6Anea-5nXRItwS9L6G
         [[UITabBar appearance] setSelectedImageTintColor:[UIColor blackColor]];
         [[UITabBar appearance] setTranslucent:YES];
     }
-    [GPPSignIn sharedInstance].clientID = kClientIDGoogle;
+    
+    [GIDSignIn sharedInstance].clientID = kClientIDGoogle;
     
     [self startSignificantChangeUpdates];
     //[self stopSignificantChangeUpdates];
@@ -129,7 +130,7 @@ static NSString * const kClientIDGoogle = @"AIzaSyCwMoFo_eQeuf6Anea-5nXRItwS9L6G
         [currentInstallation saveEventually];
     }
     //[FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
-    [FBAppCall handleDidBecomeActive];
+//    [FBAppCall handleDidBecomeActive];
     [FBSDKAppEvents activateApp];
 }
 

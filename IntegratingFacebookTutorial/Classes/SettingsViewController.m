@@ -10,6 +10,8 @@
 #import <Parse/Parse.h>
 #import <ParseFacebookUtilsV4/ParseFacebookUtilsV4.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+
+
 @interface SettingsViewController ()
 
 @end
@@ -414,16 +416,16 @@
 
 
 - (IBAction)onClickShareGoogle:(id)sender {
-    id<GPPShareBuilder> shareBuilder = [[GPPShare sharedInstance] shareDialog];
-    
-    // This line will fill out the title, description, and thumbnail from
-    // the URL that you are sharing and includes a link to that URL.
-    [shareBuilder setURLToShare:[NSURL URLWithString:@"ttp://http://denunciaecatepec.com/alertaciudadana"]];
-    //[shareBuilder setTitle:@"DangerAway!" description:@"" thumbnailURL:[NSURL URLWithString:@"http://zahuisoftware.com/dangeraway/img/DAFooterLogo.png"]];
-    // Optionally attach a deep link ID for your mobile app
-    //[shareBuilder setContentDeepLinkID:@"/restaurant/sf/1234567/"];
-    
-    [shareBuilder open];
+//    id<GPPShareBuilder> shareBuilder = [[GPPShare sharedInstance] shareDialog];
+//    
+//    // This line will fill out the title, description, and thumbnail from
+//    // the URL that you are sharing and includes a link to that URL.
+//    [shareBuilder setURLToShare:[NSURL URLWithString:@"ttp://http://denunciaecatepec.com/alertaciudadana"]];
+//    //[shareBuilder setTitle:@"DangerAway!" description:@"" thumbnailURL:[NSURL URLWithString:@"http://zahuisoftware.com/dangeraway/img/DAFooterLogo.png"]];
+//    // Optionally attach a deep link ID for your mobile app
+//    //[shareBuilder setContentDeepLinkID:@"/restaurant/sf/1234567/"];
+//    
+//    [shareBuilder open];
 }
 
 

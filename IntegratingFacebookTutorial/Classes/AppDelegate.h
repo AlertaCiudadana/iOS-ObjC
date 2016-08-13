@@ -24,6 +24,7 @@
 #import <Parse/Parse.h>
 #import <ParseFacebookUtilsV4/ParseFacebookUtilsV4.h>
 #import "LoginViewController.h"
+#import <GoogleSignIn/GoogleSignIn.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate, CLLocationManagerDelegate>{
     

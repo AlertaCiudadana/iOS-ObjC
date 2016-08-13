@@ -5,5 +5,12 @@ use_frameworks!
 
 target 'Alerta Ciudadana' do
     pod 'Parse'
+    pod 'GoogleMaps'
+    pod 'FBSDKCoreKit'
+    pod 'FBSDKShareKit'
+    pod 'FBSDKLoginKit'
+    pod 'ParseFacebookUtilsV4'
+    pod 'GoogleMobileAds'
+    pod 'GoogleSignIn'
 end
 

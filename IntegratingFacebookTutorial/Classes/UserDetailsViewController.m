@@ -22,7 +22,7 @@
 
 #import <Parse/Parse.h>
 
-#import <ParseFacebookUtilsV4/ParseFacebookUtilsV4.h>
+
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @implementation UserDetailsViewController
